@@ -1,0 +1,400 @@
+header {
+    background-image: url(../img/homehero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: var(--white);
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+.intro {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: rgba(201, 169, 75, 0.2);
+    color: var(--white);
+    padding: 1.5rem 3rem;
+    width: fit-content;
+    display: inline-flex;
+    border-radius: 10rem;
+    margin-bottom: 2rem;
+}
+
+.headerContent {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerContent h1 {
+    font-size: 8rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.headerContent h1 span {
+    color: var(--primary-gold);
+}
+
+.headerContent p {
+    font-size: 1.8rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #e0e0e0;
+}
+
+.heroBtns {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1 {
+    background-color: var(--primary-gold);
+    color: var(--white);
+    padding: 1.5rem 3.5rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    transition: var(--transition);
+}
+
+.btn2 {
+    background-color: transparent;
+    color: var(--white);
+    padding: 1.5rem 3.5rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    border: 2px solid var(--white);
+    transition: var(--transition);
+}
+
+.btn1:hover {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    transform: translateY(-3px);
+}
+
+.btn2:hover {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    transform: translateY(-3px);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.allCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.levels {
+    margin: 8rem 0 4rem;
+    font-size: 3.5rem;
+    color: var(--primary-gold);
+    text-align: center;
+    font-weight: 800;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    height: 35rem;
+    width: 32rem;
+    padding: 3rem;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    transition: var(--transition);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card1 { background-image: url(../img/creceh.jpg); }
+.card2 { background-image: url(../img/nursery.jpg); }
+.card3 { background-image: url(../img/primarysch.jpg); }
+.card4 { background-image: url(../img/jhs.jpg); }
+.card5 { background-image: url(../img/shs.jpg); }
+.card6 { background-image: url(../img/uni.jpg); }
+
+.allh1 {
+    font-size: 2.4rem;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.allp {
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.alla {
+    padding: 1.2rem 2.5rem;
+    background-color: var(--accent-gold);
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--white);
+    border-radius: 10rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.alla:hover {
+    background-color: var(--primary-blue);
+    transform: translateX(5px);
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.second {
+    width: 100%;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 2rem;
+}
+
+.second h3 {
+    font-size: 3.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 6rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.secondCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 2.5rem;
+    padding: 4rem 3rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    height: 25rem;
+    width: 30rem;
+    margin: 2rem;
+    transition: var(--transition);
+}
+
+.secondCards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-gold);
+}
+
+.secondCards h4 {
+    font-size: 2.4rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.cardInfo {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.parents {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10rem 2rem;
+}
+
+.parents h4 {
+    font-size: 3.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 6rem;
+    font-weight: 800;
+}
+
+.parentsCards {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.parent1 {
+    background-color: #f9f9f9;
+    padding: 4rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid var(--primary-gold);
+    border-radius: 2.5rem;
+    min-height: 25rem;
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-style: italic;
+    transition: var(--transition);
+}
+
+.parent1:hover {
+    transform: scale(1.02);
+    background-color: var(--white);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-style: normal;
+}
+
+.title {
+    font-size: 1.4rem;
+    color: #888;
+    font-style: normal;
+}
+
+.awards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f7f6;
+    padding: 10rem 2rem;
+}
+
+.awards h5 {
+    font-size: 3.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 6rem;
+    font-weight: 800;
+}
+
+.awardsCards {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.award1 {
+    background-color: var(--white);
+    width: 35rem;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+}
+
+.award1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.award1 img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+}
+
+.items {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.date {
+    color: var(--primary-gold);
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.awards h6 {
+    color: var(--primary-blue);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.mssg {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2.5rem;
+}
+
+.items a {
+    padding: 1.2rem 2.5rem;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 10rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.items a:hover {
+    background-color: var(--accent-gold);
+    transform: translateX(5px);
+}
