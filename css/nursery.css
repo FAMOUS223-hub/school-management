@@ -1,5 +1,6 @@
 /* --- Nursery Page: Premium Design --- */
 
+/* Hero Section */
 .nurseryHero {
     height: 80vh;
     background: linear-gradient(135deg, rgba(0, 44, 83, 0.6), rgba(0, 26, 51, 0.6)), url(../img/nurseryhero.jpg);
@@ -16,29 +17,22 @@
     overflow: hidden;
 }
 
-<<<<<<< HEAD
-/* Premium Header Doodle Effect */
 .nurseryHero::after {
-=======
-header::after {
->>>>>>> parent of 6206d80 (added shs and prrimary page)
     content: '';
     position: absolute;
     bottom: -10px;
     left: 0;
     width: 100%;
-<<<<<<< HEAD
     height: 40px;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,213.3C672,203,768,149,864,133.3C960,117,1056,139,1152,160C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
     background-size: cover;
     pointer-events: none;
-=======
-    height: 10rem;
-    background: linear-gradient(to top, var(--white), transparent);
->>>>>>> parent of 6206d80 (added shs and prrimary page)
 }
 
-.heroContent { z-index: 10; padding-top: 5rem; }
+.heroContent {
+    z-index: 10;
+    padding-top: 5rem;
+}
 
 .heroContent h1 {
     font-size: 8rem;
@@ -58,18 +52,15 @@ header::after {
     opacity: 0.9;
 }
 
-/* --- Main Content --- */
-main {
-    padding: 10rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
+/* --- Overview Section --- */
 .overviewGrid {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 6rem;
     align-items: start;
+    max-width: 1200px;
+    margin: 10rem auto;
+    padding: 0 2rem;
 }
 
 .overviewImg {
@@ -82,7 +73,7 @@ main {
     height: auto;
     object-fit: cover;
     border-radius: 2.5rem;
-    box-shadow: var(--shadow-premium);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
     transition: var(--transition);
 }
 
@@ -134,7 +125,7 @@ main {
 .cardInfo {
     padding: 3.5rem 3rem;
     background-color: var(--white);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     border-radius: 2.5rem;
     border-top: 6px solid var(--primary-gold);
     transition: var(--transition);
@@ -145,8 +136,8 @@ main {
 
 .cardInfo:hover {
     transform: translateY(-10px);
-    box-shadow: var(--shadow-md);
-    background-color: var(--off-white);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+    background-color: #f8f9fa;
 }
 
 .cardInfo h3 {
@@ -166,6 +157,7 @@ main {
 /* --- Facilities --- */
 .facilities {
     padding: 10rem 2rem;
+    background: #f8f9fa;
 }
 
 .sectionHeader {
@@ -184,6 +176,8 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .facilityCard {
@@ -191,7 +185,8 @@ main {
     border-radius: 2.5rem;
     overflow: hidden;
     height: 40rem;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
 }
 
 .facilityCard img {
@@ -199,6 +194,10 @@ main {
     height: 100%;
     object-fit: cover;
     transition: var(--transition);
+}
+
+.facilityCard:hover img {
+    transform: scale(1.05);
 }
 
 .facilityOverlay {
@@ -209,16 +208,7 @@ main {
     padding: 4rem 3rem;
     background: linear-gradient(to top, rgba(0, 44, 83, 0.9), transparent);
     color: var(--white);
-    transform: translateY(2rem);
     transition: var(--transition);
-}
-
-.facilityCard:hover img {
-    transform: scale(1.1);
-}
-
-.facilityCard:hover .facilityOverlay {
-    transform: translateY(0);
 }
 
 .facilityOverlay h3 {
@@ -230,6 +220,125 @@ main {
 .facilityOverlay p {
     font-size: 1.5rem;
     opacity: 0.9;
+}
+
+/* --- Playground Showcase --- */
+.playground-showcase {
+    padding: 10rem 2rem;
+    background: var(--white);
+}
+
+.playground-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.playground-features {
+    list-style: none;
+    margin-top: 3rem;
+}
+
+.playground-features li {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: #444;
+}
+
+.playground-image img {
+    width: 100%;
+    border-radius: 2.5rem;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+/* --- Daily Routine --- */
+.daily-routine {
+    padding: 10rem 2rem;
+    background: #f8f9fa;
+}
+
+.routine-timeline {
+    max-width: 900px;
+    margin: 6rem auto 0;
+}
+
+.routine-item {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #eee;
+}
+
+.time span {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--primary-gold);
+}
+
+.activity h3 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+/* --- News & Achievements --- */
+.news-achievements {
+    padding: 10rem 2rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-card {
+    background: var(--white);
+    border-radius: 2.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: var(--transition);
+}
+
+.news-card:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+.news-card img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.news-body {
+    padding: 3rem;
+}
+
+.news-tag {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: var(--primary-gold);
+    color: var(--white);
+    font-size: 1.2rem;
+    border-radius: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.news-body h3 {
+    font-size: 2.2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
 }
 
 /* --- Responsive --- */
