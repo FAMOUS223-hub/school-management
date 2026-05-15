@@ -16,17 +16,26 @@
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 /* Premium Header Doodle Effect */
 .nurseryHero::after {
+=======
+header::after {
+>>>>>>> parent of 6206d80 (added shs and prrimary page)
     content: '';
     position: absolute;
     bottom: -10px;
     left: 0;
     width: 100%;
+<<<<<<< HEAD
     height: 40px;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,213.3C672,203,768,149,864,133.3C960,117,1056,139,1152,160C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
     background-size: cover;
     pointer-events: none;
+=======
+    height: 10rem;
+    background: linear-gradient(to top, var(--white), transparent);
+>>>>>>> parent of 6206d80 (added shs and prrimary page)
 }
 
 .heroContent { z-index: 10; padding-top: 5rem; }
