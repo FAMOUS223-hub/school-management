@@ -1,8 +1,9 @@
 /* --- SHS Page: Premium Design --- */
 
+/* Hero Section */
 .shsHero {
     height: 90vh;
-    background: linear-gradient(135deg, rgba(0, 44, 83, 0.85), rgba(0, 26, 51, 0.95)), url(../img/shsmain.jpg);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/shsmain.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -23,41 +24,43 @@
     left: 0;
     width: 100%;
     height: 40px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,213.3C672,203,768,149,864,133.3C960,117,1056,139,1152,160C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
-    background-size: cover;
-    pointer-events: none;
 }
 
-.heroContent { z-index: 10; padding-top: 5rem; }
+.heroContent {
+    z-index: 10;
+    padding-top: 5rem;
+}
 
 .badge {
     display: inline-flex;
-    padding: 1.2rem 2.4rem;
+    padding: 1.5rem 3rem;
     background-color: rgba(201, 169, 75, 0.2);
-    color: var(--primary-gold);
-    border-radius: var(--radius-full);
+    color: var(--white);
+    border-radius: 10rem;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 2rem;
 }
 
 .shsHero h1 {
-    font-size: clamp(4rem, 8vw, 8rem);
+    font-size: 8rem;
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     line-height: 1.1;
     color: var(--white);
 }
 
-.shsHero h1 span { color: var(--primary-gold); }
+.shsHero h1 span {
+    color: var(--primary-gold);
+}
 
 .shsHero p {
     font-size: 1.8rem;
-    max-width: 80rem;
-    margin: 0 auto 4rem;
-    color: #f1f5f9;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #e0e0e0;
 }
 
 .heroCta {
@@ -66,61 +69,301 @@
     justify-content: center;
 }
 
-/* --- Overview & Stats --- */
-.shsOverview { padding: 10rem 2rem; }
-.overviewGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8rem; align-items: center; max-width: 1200px; margin: 0 auto; }
+.mainBtn {
+    background-color: var(--primary-gold);
+    color: var(--white);
+    padding: 1.5rem 3.5rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    transition: var(--transition);
+}
 
-.overviewText h2 { font-size: 3.5rem; color: var(--primary-blue); margin-bottom: 2.5rem; font-weight: 800; }
-.benefitList { list-style: none; margin-top: 3rem; }
-.benefitList li { font-size: 1.6rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1.5rem; color: var(--text-dark); }
-.icon { font-size: 2.4rem; }
+.secBtn {
+    background-color: transparent;
+    color: var(--white);
+    padding: 1.5rem 3.5rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    border: 2px solid var(--white);
+    transition: var(--transition);
+}
 
-.overviewStats { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-.statCard { background: #f8faff; padding: 4rem 2rem; border-radius: var(--radius-md); text-align: center; border-left: 6px solid var(--primary-gold); box-shadow: var(--shadow-sm); transition: var(--transition); }
-.statCard:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
-.statCard h3 { font-size: 4.5rem; color: var(--primary-blue); margin-bottom: 0.5rem; font-weight: 800; }
-.statCard p { font-size: 1.4rem; color: var(--text-muted); font-weight: 600; }
+.mainBtn:hover,
+.secBtn:hover {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    transform: translateY(-3px);
+}
 
-/* --- Tracks --- */
-.academicTracks { padding: 10rem 2rem; background: var(--off-white); }
-.sectionHeader { text-align: center; margin-bottom: 6rem; }
-.sectionHeader h2 { font-size: 3.5rem; color: var(--primary-blue); margin-bottom: 2rem; font-weight: 800; }
-.tracksGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); gap: 4rem; max-width: 1200px; margin: 0 auto; }
-.trackCard { background: var(--white); padding: 5rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--light-gray); transition: var(--transition); box-shadow: var(--shadow-sm); }
-.trackCard:hover { border-color: var(--primary-gold); transform: translateY(-1rem); box-shadow: var(--shadow-md); }
-.trackIcon { font-size: 5rem; margin-bottom: 2.5rem; display: block; }
-.trackCard h3 { font-size: 2.4rem; margin-bottom: 1.5rem; color: var(--primary-blue); font-weight: 700; }
-.trackCard p { font-size: 1.5rem; color: var(--text-muted); line-height: 1.7; }
+/* --- Overview Section --- */
+.shsOverview {
+    padding: 10rem 2rem;
+    font-size: 1.6rem;
+}
+
+.overviewGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.overviewText h2 {
+    font-size: 3.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.benefitList {
+    list-style: none;
+    margin-top: 3rem;
+}
+
+.benefitList li {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: #666;
+}
+
+.icon {
+    font-size: 2.4rem;
+}
+
+.overviewStats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.statCard {
+    background: var(--white);
+    padding: 4rem 3rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    border-left: 6px solid var(--primary-gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: var(--transition);
+}
+
+.statCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.statCard h3 {
+    font-size: 3.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.statCard p {
+    font-size: 1.5rem;
+    color: #666;
+    font-weight: 600;
+}
+
+/* --- Academic Tracks --- */
+.academicTracks {
+    padding: 10rem 2rem;
+    background: #f8f9fa;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 6rem;
+    font-size: 1.6rem;
+}
+
+.sectionHeader h2 {
+    font-size: 3.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.tracksGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trackCard {
+    background: var(--white);
+    padding: 4rem 3rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.trackCard:hover {
+    border-color: var(--primary-gold);
+    transform: translateY(-1rem);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.trackIcon {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.trackCard h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+.trackCard p {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
 
 /* --- Facilities --- */
-.eliteFacilities { padding: 10rem 2rem; }
-.facilityContent { display: grid; gap: 6rem; max-width: 1200px; margin: 0 auto; }
-.facilityText { text-align: center; }
-.facilityText h2 { font-size: 3.5rem; color: var(--primary-blue); margin-bottom: 2rem; }
-.facilityGallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 28rem; gap: 2rem; }
-.galleryItem { border-radius: var(--radius-md); overflow: hidden; position: relative; }
-.galleryItem img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
-.galleryOverlay { position: absolute; bottom: 0; left: 0; width: 100%; padding: 3rem; background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent); color: var(--white); opacity: 0; transition: var(--transition); display: flex; align-items: flex-end; }
-.galleryItem:hover .galleryOverlay { opacity: 1; }
-.galleryItem:hover img { transform: scale(1.05); }
-.galleryItem.wide { grid-column: span 2; }
-.galleryItem.tall { grid-row: span 2; }
+.eliteFacilities {
+    padding: 10rem 2rem;
+}
+
+.facilityContent {
+    display: grid;
+    gap: 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.facilityText {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.facilityText h2 {
+    font-size: 3.5rem;
+    color: var(--primary-gold);
+}
+
+.facilityGallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 28rem;
+    gap: 2rem;
+}
+
+.galleryItem {
+    border-radius: 2.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.galleryItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.galleryOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: var(--white);
+    opacity: 0;
+    transition: var(--transition);
+    display: flex;
+    align-items: flex-end;
+}
+
+.galleryItem:hover .galleryOverlay {
+    opacity: 1;
+}
+
+.galleryItem:hover img {
+    transform: scale(1.05);
+}
+
+.galleryItem.wide {
+    grid-column: span 2;
+}
+
+.galleryItem.tall {
+    grid-row: span 2;
+}
 
 /* --- CTA --- */
-.shsCta { padding: 10rem 2rem; }
-.ctaBox { background: var(--primary-blue); padding: 8rem 4rem; border-radius: var(--radius-lg); text-align: center; color: var(--white); max-width: 1000px; margin: 0 auto; }
-.ctaBox h2 { color: var(--white); font-size: 3.5rem; margin-bottom: 2rem; font-weight: 800; }
-.ctaBox p { font-size: 1.6rem; color: #cbd5e1; margin-bottom: 4rem; }
-.ctaBtns { display: flex; gap: 2rem; justify-content: center; }
+.shsCta {
+    padding: 10rem 2rem;
+}
+
+.ctaBox {
+    background: var(--primary-blue);
+    padding: 8rem 4rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    color: var(--white);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ctaBox h2 {
+    color: var(--white);
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.ctaBox p {
+    font-size: 1.6rem;
+    color: #d1d1d1;
+    margin-bottom: 4rem;
+}
+
+.ctaBtns {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
 
 /* --- Responsive --- */
 @media (max-width: 1024px) {
-    .overviewGrid { grid-template-columns: 1fr; }
-    .facilityGallery { grid-template-columns: repeat(2, 1fr); }
+    .overviewGrid {
+        grid-template-columns: 1fr;
+    }
+    .facilityGallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
 @media (max-width: 768px) {
-    .facilityGallery { grid-template-columns: 1fr; }
-    .galleryItem.wide, .galleryItem.tall { grid-column: span 1; grid-row: span 1; }
-    .heroCta { flex-direction: column; }
-    .overviewStats { grid-template-columns: 1fr; }
+    .facilityGallery {
+        grid-template-columns: 1fr;
+    }
+    .galleryItem.wide,
+    .galleryItem.tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .heroCta {
+        flex-direction: column;
+    }
+    .overviewStats {
+        grid-template-columns: 1fr;
+    }
 }

@@ -1,116 +1,133 @@
-/* --- Creche Page Styles --- */
+/* --- Creche Page: Premium Design --- */
 
-header {
+/* Hero Section */
+.crecheHero {
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/crechehero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    background-image: url(../img/crechehero.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: overlay;
-    color: var(--white);
     text-align: center;
-    padding: 0 2rem;
-}
-
-.heroSection h1 {
-    font-size: clamp(4rem, 8vw, 7rem);
-    font-weight: 900;
-    color: var(--primary-gold);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.heroSection p {
-    font-size: clamp(1.8rem, 3vw, 2.4rem);
-    font-weight: 300;
-    letter-spacing: 1px;
     color: var(--white);
-    opacity: 0.9;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
-main {
-    padding: 10rem 5%;
-    max-width: 1400px;
-    margin: 0 auto;
+.crecheHero::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,213.3C672,203,768,149,864,133.3C960,117,1056,139,1152,160C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: cover;
+    pointer-events: none;
 }
 
-.allInfo {
+.heroContent {
+    z-index: 10;
+    padding-top: 5rem;
+}
+
+.heroContent h1 {
+    font-size: 8rem;
+    font-weight: 800;
+    color: var(--primary-gold);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.heroContent p {
+    font-size: 1.8rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #e0e0e0;
+}
+
+/* --- Overview Section --- */
+.overview {
+    padding: 10rem 2rem;
+}
+
+.overviewGrid {
     display: flex;
     gap: 8rem;
     align-items: flex-start;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.info {
+.overviewText {
     flex: 1;
     max-width: 600px;
 }
 
-.info span {
-    display: block;
-    font-size: clamp(3rem, 5vw, 4.5rem);
+.overviewText h2 {
+    font-size: 3.5rem;
     font-weight: 800;
-    color: var(--secondary-blue);
+    color: var(--primary-blue);
     line-height: 1.1;
     margin-bottom: 3rem;
     position: relative;
+    padding-bottom: 2rem;
 }
 
-.info span::after {
+.overviewText h2::after {
     content: '';
     position: absolute;
-    bottom: -1.5rem;
+    bottom: 0;
     left: 0;
     width: 6rem;
     height: 4px;
     background-color: var(--primary-gold);
 }
 
-.info p {
-    font-size: 1.7rem;
+.overviewText p {
+    font-size: 1.6rem;
     line-height: 1.8;
     color: var(--text-dark);
     margin-bottom: 2.5rem;
     opacity: 0.85;
 }
 
-.care {
+.careGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 2rem;
     margin-top: 5rem;
 }
 
-.care1 {
+.careCard {
     padding: 3rem 2rem;
-    background-color: var(--white);
-    border-radius: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 2.5rem;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
-    border: 1px solid rgba(0, 0, 0, 0.03);
+    border: 1px solid #eee;
 }
 
-.care1:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+.careCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
     border-color: var(--primary-gold);
 }
 
-.care1 span {
+.careCard span {
     display: block;
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
 }
 
-.care1 p {
+.careCard p {
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--primary-blue);
@@ -140,266 +157,253 @@ main {
     transform: scale(1.03);
 }
 
-.image1 {
+.image-main {
     grid-row: span 2;
 }
 
-.image1 img {
+.image-main img {
     height: 55rem;
 }
 
-.image2 img, .image3 img {
+.image-sub img {
     height: 26.5rem;
 }
 
-.curriculum{
+/* --- Curriculum Section --- */
+.curriculum {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 5rem;
+    padding: 10rem 5rem;
     align-items: center;
     text-align: center;
-    flex-wrap: wrap;
-     background-image: url(../img/creche2.jpg);
+    background-image: url(../img/creche2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: rgba(0, 44, 83, 0.8);
     background-blend-mode: overlay;
     background-attachment: fixed;
+    color: var(--white);
 }
 
-.curriculum p{
-    font-size: 2rem;
+.curriculum h2 {
+    font-size: 3.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 5rem;
+    border-bottom: 4px solid var(--primary-gold);
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+.curriculum p {
+    font-size: 1.8rem;
     margin-bottom: 3rem;
-    max-width: 60%;
+    max-width: 800px;
 }
 
-.curriculumCards{
-    display: flex;
-    justify-content: space-between;
+.curriculumGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: center;
     align-items: center;
     gap: 3rem;
-    max-width: 70%;
-    flex-wrap: wrap;
+    max-width: 1000px;
 }
 
-.card{
-    background-color: rgb(255, 255, 255);
-    padding: 2rem;
-    border-radius: 2rem;
-    height: auto;
-    width: auto;
-    flex-grow: 1;
+.curriculumCard {
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    box-shadow: 0 05px 10px 0 rgba(0, 0, 0, 0.213);
-}
-.card2{
-    width: 30rem;
-    flex-grow: 1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: var(--text-dark);
 }
 
-.text{
-    color: var(--white);
-}
-.curriculum h2{
-    font-size: 4rem;
-    color: var(--primary-gold);
-    margin-bottom: 5rem;
-    border-bottom: 5px solid var(--primary-gold);
-    border-radius: 10rem;
-    font-weight: 800;
-}
-
-.curriculumCards span{
+.curriculumCard span {
     font-size: 5rem;
-}
-
-.curriculumCards h3{
-    font-size: 2rem;
-    color: var(--secondary-blue);
     margin-bottom: 1rem;
 }
 
-.curriculumCards p{
+.curriculumCard h3 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.curriculumCard p {
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #666;
 }
 
-.timetable{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-    flex-direction: column;
+/* --- Timetable Section --- */
+.timetable {
+    padding: 10rem 2rem;
+    text-align: center;
 }
 
-.timetable h4{
+.timetable h4 {
     font-weight: 800;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: var(--primary-gold);
     margin-bottom: 5rem;
 }
 
-.tables{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.tablesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 3rem;
-    max-width: 70%;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.tableInfo{
+.tableCard {
     padding: 3rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 2rem;
+    background-color: var(--white);
+    border-radius: 2.5rem;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
-    width: 35rem;
-    border-left: 5px solid var(--primary-gold);
-    box-shadow: 0 05px 10px 0 rgba(0, 0, 0, 0.109);
-    flex-grow: 1;
+    border-left: 6px solid var(--primary-gold);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.time{
-    font-size: 2rem;
+.time {
+    font-size: 1.8rem;
     font-weight: 800;
     color: var(--text-dark);
-    margin-bottom: 3rem;
-}
-
-.activity{
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-gold);
-    margin-bottom: 2rem;
-}
-
-.tableInfo p{
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-
-/* --- Facilities Section --- */
-.facilities {
-    padding: 10rem 5%;
-    background-color: var(--light-gray);
-    text-align: center;
-}
-
-.facilities h2 {
-    font-size: clamp(3rem, 5vw, 4.5rem);
-    color: var(--secondary-blue);
-    font-weight: 800;
     margin-bottom: 1.5rem;
 }
 
-.sectionSubtitle {
-    font-size: 1.8rem;
-    color: var(--text-dark);
-    opacity: 0.7;
+.activity {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+}
+
+.tableCard p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* --- Facilities --- */
+.facilities {
+    padding: 10rem 2rem;
+    background: var(--white);
+}
+
+.sectionHeader {
+    text-align: center;
     margin-bottom: 6rem;
+}
+
+.sectionHeader h2 {
+    font-size: 3.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 2rem;
+    font-weight: 800;
 }
 
 .facilityGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .facilityCard {
-    background-color: var(--white);
-    padding: 4rem 3rem;
-    border-radius: 3rem;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    height: 40rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: var(--transition);
-    border: 1px solid rgba(0, 0, 0, 0.02);
 }
 
-.facilityCard:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+.facilityCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
 }
 
-.facilityIcon {
-    font-size: 5rem;
-    margin-bottom: 2.5rem;
+.facilityCard:hover img {
+    transform: scale(1.05);
 }
 
-.facilityCard h3 {
-    font-size: 2.2rem;
-    color: var(--primary-blue);
-    margin-bottom: 1.5rem;
-    font-weight: 700;
+.facilityOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 3rem;
+    background: linear-gradient(to top, rgba(0, 44, 83, 0.9), transparent);
+    color: var(--white);
+    transition: var(--transition);
 }
 
-.facilityCard p {
-    font-size: 1.6rem;
-    line-height: 1.7;
-    color: var(--text-dark);
-    opacity: 0.8;
+.facilityOverlay h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--primary-gold);
 }
 
-/* --- Testimonials Section --- */
+.facilityOverlay p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+/* --- Testimonials --- */
 .testimonials {
-    padding: 12rem 5%;
-    background-color: var(--white);
+    padding: 10rem 2rem;
+    background: #f8f9fa;
     text-align: center;
 }
 
-.testimonials h5 {
-    font-size: clamp(3rem, 5vw, 4.5rem);
-    color: var(--primary-gold);
-    font-weight: 800;
-    margin-bottom: 8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.testimonialContainer {
+.testimonialsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     gap: 4rem;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .testimonialCard {
-    background-color: #fafbfc;
+    background: var(--white);
     padding: 5rem 4rem;
-    border-radius: 4rem;
+    border-radius: 2.5rem;
     position: relative;
     text-align: left;
     transition: var(--transition);
-    border: 1px solid rgba(0, 0, 0, 0.03);
+    border: 1px solid #eee;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .testimonialCard:hover {
-    background-color: var(--white);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1rem);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
 }
 
-.quote {
+.quote-icon {
     font-size: 8rem;
     color: var(--primary-gold);
     position: absolute;
-    top: 1rem;
-    left: 3rem;
+    top: 0;
+    left: 2rem;
     font-family: serif;
-    opacity: 0.2;
+    opacity: 0.3;
 }
 
-.testimonialText {
-    font-size: 1.7rem;
+.testimonial-text {
+    font-size: 1.6rem;
     line-height: 1.8;
     color: var(--text-dark);
     font-style: italic;
@@ -408,38 +412,39 @@ main {
     z-index: 1;
 }
 
-.parentInfo {
+.testimonial-author {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 2rem;
 }
 
-.parentInfo strong {
+.author-info h4 {
     font-size: 1.8rem;
-    color: var(--secondary-blue);
+    color: var(--primary-blue);
+    font-weight: 700;
 }
 
-.parentInfo span {
+.author-info span {
     font-size: 1.4rem;
     color: var(--primary-gold);
     font-weight: 600;
+    text-transform: uppercase;
 }
 
-/* --- Responsive Design --- */
-
+/* --- Responsive --- */
 @media (max-width: 1024px) {
-    .allInfo {
+    .overviewGrid {
         flex-direction: column;
         gap: 6rem;
         align-items: center;
     }
 
-    .info {
+    .overviewText {
         max-width: 800px;
         text-align: center;
     }
 
-    .info span::after {
+    .overviewText h2::after {
         left: 50%;
         transform: translateX(-50%);
     }
@@ -447,59 +452,5 @@ main {
     .images {
         width: 100%;
         max-width: 800px;
-    }
-    .curriculum p{
-        max-width: 90%;
-    }
-    .curriculumCards, .tables {
-        max-width: 95%;
-    }
-}
-
-@media (max-width: 600px) {
-    main {
-        padding: 6rem 5%;
-    }
-
-    .care {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .image1 img {
-        height: 40rem;
-    }
-
-    .image2 img, .image3 img {
-        height: 19rem;
-    }
-    
-    .images {
-        gap: 1.5rem;
-    }
-
-    .curriculum, .timetable, .facilities, .testimonials {
-        padding: 8rem 5%;
-    }
-
-    .testimonialCard {
-        padding: 4rem 2.5rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .care {
-        grid-template-columns: 1fr;
-    }
-    
-    .images {
-        grid-template-columns: 1fr;
-    }
-    
-    .image1 {
-        grid-row: auto;
-    }
-
-    .testimonialContainer {
-        grid-template-columns: 1fr;
     }
 }
