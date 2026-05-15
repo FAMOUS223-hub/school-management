@@ -7,59 +7,162 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/primary.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <nav>
         <div class="navItems">
             <div class="brand">
-                <a href="index.html"><img src="img/logo.png" alt="">PREMIUM <span>ACADEMY</span> </a>
+                <a href="index.html"><img src="img/logo.png" alt="Premium Academy Logo">PREMIUM <span>ACADEMY</span> </a>
             </div>
 
             <ul id="navlinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="creche.html">Creche</a></li>
                 <li><a href="nursery.html">Nursery</a></li>
-                <li><a href="primary.html">Primary & JHS</a></li>
-                <li><a href="#">SHS</a></li>
+                <li><a href="primary.html" class="active">Primary & JHS</a></li>
+                <li><a href="shs.html">SHS</a></li>
                 <li><a href="#">University</a></li>
             </ul>
-            <div id="openBtn"><img src="img/menu.png" alt=""></div>
+            <div id="openBtn"><img src="img/menu.png" alt="Menu"></div>
         </div>
     </nav>
 
-    <header>
-        <div class="heroSection">
-            <h1>PRIMARY & JHS</h1>
-            <p>Empowering Students with Knowledge and Character</p>
+    <header class="primaryHero">
+        <div class="heroContent">
+            <h1>Primary & <span>JHS</span></h1>
+            <p>Empowering students with knowledge, character, and leadership skills for a brighter future.</p>
+            <div class="heroCta">
+                <a href="#curriculum" class="mainBtn">Explore Curriculum</a>
+                <a href="#jhs" class="secBtn">JHS Program</a>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="overview">
-            <div class="items">
-                <div class="card">
-                    <div class="cardImage">
-                        <img src="img/primarysch.jpg" alt="Primary School">
+            <div class="container">
+                <div class="overviewGrid">
+                    <div class="overviewText">
+                        <span class="section-label">Our Philosophy</span>
+                        <h2>A Foundation for Excellence</h2>
+                        <p>We nurture young minds through a balanced curriculum that combines rigorous academics with character-building, creativity, and physical well-being. Our student-centered approach ensures every child reaches their full potential.</p>
+                        <div class="statGrid">
+                            <div class="statItem">
+                                <h3>1:12</h3>
+                                <p>Teacher-Student Ratio</p>
+                            </div>
+                            <div class="statItem">
+                                <h3>100%</h3>
+                                <p>Placement Rate</p>
+                            </div>
+                            <div class="statItem">
+                                <h3>20+</h3>
+                                <p>Extracurricular Clubs</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cardContent">
-                        <h2>Academic Excellence</h2>
-                        <p>Our primary curriculum is designed to foster critical thinking and a love for learning in every student.</p>
+                    <div class="overviewImage">
+                        <img src="img/primarysch.jpg" alt="Primary School Students">
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="card">
-                    <div class="cardImage">
-                        <img src="img/classroom2.jpg" alt="Classroom">
+        <section id="curriculum" class="curriculum">
+            <div class="container">
+                <div class="sectionHeader">
+                    <span class="section-label">Academic Tracks</span>
+                    <h2>Holistic Curriculum</h2>
+                </div>
+                <div class="curriculumGrid">
+                    <div class="currCard">
+                        <div class="currIcon">📚</div>
+                        <h3>Core Literacy</h3>
+                        <p>Comprehensive reading, writing, and language development programs.</p>
                     </div>
-                    <div class="cardContent">
-                        <h2>Holistic Development</h2>
-                        <p>Beyond academics, we focus on character building, sports, and creative arts to develop well-rounded individuals.</p>
+                    <div class="currCard">
+                        <div class="currIcon">🧮</div>
+                        <h3>STEM Discovery</h3>
+                        <p>Hands-on mathematics, science, and coding activities.</p>
+                    </div>
+                    <div class="currCard">
+                        <div class="currIcon">🎨</div>
+                        <h3>Creative Arts</h3>
+                        <p>Music, visual arts, and dramatic performance workshops.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="jhs" class="jhsSection">
+            <div class="container">
+                <div class="jhsContent">
+                    <div class="jhsImage">
+                        <img src="img/jhs.jpg" alt="JHS Students">
+                    </div>
+                    <div class="jhsText">
+                        <span class="section-label">JHS Advancement</span>
+                        <h2>Junior High Excellence</h2>
+                        <p>Our JHS program prepares students for national and international examinations with focused mentorship, leadership training, and elective career exploration.</p>
+                        <ul class="jhsFeatures">
+                            <li>Advanced STEM Electives</li>
+                            <li>Critical Thinking & Debate</li>
+                            <li>Personalized Career Mentoring</li>
+                            <li>Global Citizenship Projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ctaSection">
+            <div class="container">
+                <div class="ctaBox">
+                    <h2>Ready to Begin Your Journey?</h2>
+                    <p>Join Premium Academy today and set the foundation for a lifetime of success.</p>
+                    <div class="ctaBtns">
+                        <a href="#" class="mainBtn">Apply Now</a>
+                        <a href="#" class="secBtn">Visit Us</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footerInfo">
+            <div class="brandName">
+                <h1>PREMIUM <span>ACADEMY</span></h1>
+                <p>Empowering the next generation of leaders through excellence in education and character building.</p>
+            </div>
+            <div class="links">
+                <h2>Quick Links</h2>
+                 <ul id="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="creche.html">Creche</a></li>
+                    <li><a href="nursery.html">Nursery</a></li>
+                    <li><a href="primary.html" class="active">Primary & JHS</a></li>
+                    <li><a href="shs.html">SHS</a></li>
+                    <li><a href="#">University</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Location</h3>
+                <p>📍 123 Education Lane, Elite City</p>
+                <p>📞 +1 234 567 890</p>
+                <p>📧 info@premiumacademy.com</p>
+            </div>
+            <div class="socialMedia">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <p class="copyright">Made with 💙 by Famous Graphics | © 2024 Premium Academy</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
