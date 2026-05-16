@@ -34,7 +34,7 @@
             <p class="content">Where Excellence Meets Education | Empowering minds through a world-class education system designed for excellence and leadership.</p>
             <div class="heroBtns">
                 <a href="#levels" class="btn btn1">Our Programs</a>
-                <a href="#" class="btn btn2">Apply Now</a>
+                <a href="#" class="btn btn2 modalTrigger">Apply Now</a>
             </div>
         </div>
     </header>
@@ -75,7 +75,7 @@
         <div class="cards">
             <div class="card5">
                 <h1 class="allh1">SHS</h1>
-                <p class="allp">A safe, nurturing environment for your kids to be built into their dream adults</p>
+                <p class="allp">Rigorous academic program preparing students for top university placements and global leadership.</p>
                 <a href="shs.html" class="alla">Learn More</a>
             </div>
         </div>
@@ -131,35 +131,91 @@
         </div>
     </div>
 
-    <div class="awards">
+    <div class="newsEvents">
         <h5>Latest News & Events</h5>
-        <div class="awardsCards">
-            <div class="award1">
-                <img src="img/classroom.jpg" alt="">
-            <div class="items">
-                    <p class="date">Oct 15, 2024</p>
+        <div class="newsCards">
+            <div class="newsCard">
+                <img src="img/classroom.jpg" alt="Science Fair">
+            <div class="newsContent">
+                    <p class="newsDate">Oct 15, 2024</p>
                 <h6>Annual Science & Innovation Fair</h6>
-                <p class="mssg">Join us as our students showcase their ground-breaking projects and inventions.</p>
+                <p class="newsText">Join us as our students showcase their ground-breaking projects and inventions.</p>
                 <a href="#">Read More →</a>
             </div>
             </div>
-            <div class="award1">
-                <img src="img/stadium.jpg" alt="">
-            <div class="items">
-                    <p class="date">Oct 10, 2024</p>
+            <div class="newsCard">
+                <img src="img/stadium.jpg" alt="Sports Championship">
+            <div class="newsContent">
+                    <p class="newsDate">Oct 10, 2024</p>
                 <h6>Inter-School Sports Championship</h6>
-                <p class="mssg">Our athletes are ready to compete and show their sporting spirit this weekend.</p>
+                <p class="newsText">Our athletes are ready to compete and show their sporting spirit this weekend.</p>
                 <a href="#">Read More →</a>
             </div>
             </div>
-            <div class="award1">
-                <img src="img/classroom2.jpg" alt="">
-            <div class="items">
-                    <p class="date">Oct 05, 2024</p>
+            <div class="newsCard">
+                <img src="img/classroom2.jpg" alt="Music Gala">
+            <div class="newsContent">
+                    <p class="newsDate">Oct 05, 2024</p>
                 <h6>Creative Arts & Music Gala</h6>
-                <p class="mssg">JA night of celebration featuring talent from across all academic levels.</p>
+                <p class="newsText">A night of celebration featuring talent from across all academic levels.</p>
                 <a href="#">Read More →</a>
             </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modalOverlay" id="modalOverlay">
+        <div class="modalBox">
+            <button class="modalClose" id="modalClose">&times;</button>
+            <div class="modalHeader">
+                <h2>Join <span class="goldText">Premium Academy</span></h2>
+                <p>Fill in your details and our admissions team will contact you within 24 hours to discuss your child's enrollment.</p>
+            </div>
+            <form class="modalForm" id="modalForm">
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="formName">Full Name *</label>
+                        <input type="text" id="formName" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="formEmail">Email Address *</label>
+                        <input type="email" id="formEmail" name="email" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="formPhone">Phone Number *</label>
+                        <input type="tel" id="formPhone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="formChild">Child's Name</label>
+                        <input type="text" id="formChild" name="child" placeholder="Enter your child's full name">
+                    </div>
+                </div>
+                <div class="formGroup">
+                    <label for="formProgram">Level of Interest *</label>
+                    <select id="formProgram" name="program" required>
+                        <option value="">Select a level</option>
+                        <option value="Creche">Creche (6 months - 3 years)</option>
+                        <option value="Nursery">Nursery (3 - 5 years)</option>
+                        <option value="Primary">Primary (5 - 11 years)</option>
+                        <option value="JHS">JHS (11 - 14 years)</option>
+                        <option value="SHS">SHS (15 - 18 years)</option>
+                        <option value="University">University (18+ years)</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label for="formMessage">Message</label>
+                    <textarea id="formMessage" name="message" placeholder="Tell us about your child, any special requirements, or questions you may have..." rows="4"></textarea>
+                </div>
+                <div class="formGroup checkboxGroup">
+                    <input type="checkbox" id="formConsent" name="consent" required>
+                    <label for="formConsent">I consent to Premium Academy processing my data for admissions purposes. *</label>
+                </div>
+                <button type="submit" class="formSubmit">Submit Enquiry</button>
+            </form>
+            <div class="modalFooter">
+                <p>Alternatively, call us on <strong><i class="fa-solid fa-phone"></i> +1 234 567 890</strong> or visit our campus</p>
             </div>
         </div>
     </div>
@@ -196,7 +252,7 @@
                 <a href="#">Instagram</a>
                 <a href="#">LinkedIn</a>
             </div>
-            <p>Made with <i class="fa-solid fa-heart"></i> by Famous Graphics &copy; <span id="footerDate"></span></p>
+            <p>Made with 💙  by Famous Graphics &copy; <span id="footerDate"></span></p>
         </div>
     </footer>
 

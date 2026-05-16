@@ -3,7 +3,7 @@
 /* Hero Section */
 .shsHero {
     height: 90vh;
-    background: linear-gradient(135deg, rgba(0, 44, 83, 0.75), rgba(0, 26, 51, 0.85)), url(../img/shs.jpg);
+    background: linear-gradient(135deg, rgba(0, 44, 83, 0.75), rgba(0, 26, 51, 0.85)), url(../img/shsmain.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -92,12 +92,24 @@
     letter-spacing: 1px;
 }
 
+.shsHero .secBtn {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(6px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.shsHero .secBtn:hover {
+    background: var(--white);
+    border-color: var(--white);
+}
+
 .heroBtns {
     display: flex;
     gap: 2rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 4rem;
 }
 
 .mainBtn {
@@ -278,15 +290,15 @@
 
 .tracksGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .trackCard {
     background: var(--white);
-    padding: 3.5rem 2.5rem;
+    padding: 3rem 1.8rem;
     border-radius: 2rem;
     text-align: center;
     border: 1px solid #f0f0f0;
@@ -464,6 +476,7 @@
     gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
+    grid-auto-flow: dense;
 }
 
 .galleryItem {
@@ -720,7 +733,7 @@
     }
 
     .tracksGrid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .prepGrid {

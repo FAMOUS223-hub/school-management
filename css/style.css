@@ -14,6 +14,22 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: overlay;
     background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,48C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 2;
 }
 
 .intro {
@@ -36,6 +52,8 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    z-index: 3;
 }
 
 .headerContent h1 {
@@ -309,7 +327,7 @@ main {
     font-style: normal;
 }
 
-.awards {
+.newsEvents {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,14 +336,14 @@ main {
     padding: 10rem 2rem;
 }
 
-.awards h5 {
+.newsEvents h5 {
     font-size: 3.5rem;
     color: var(--primary-gold);
     margin-bottom: 6rem;
     font-weight: 800;
 }
 
-.awardsCards {
+.newsCards {
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -334,7 +352,7 @@ main {
     max-width: 1200px;
 }
 
-.award1 {
+.newsCard {
     background-color: var(--white);
     width: 35rem;
     border-radius: 2.5rem;
@@ -343,18 +361,18 @@ main {
     transition: var(--transition);
 }
 
-.award1:hover {
+.newsCard:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
-.award1 img {
+.newsCard img {
     width: 100%;
     height: 22rem;
     object-fit: cover;
 }
 
-.items {
+.newsContent {
     padding: 3rem;
     display: flex;
     justify-content: center;
@@ -362,28 +380,28 @@ main {
     flex-direction: column;
 }
 
-.date {
+.newsDate {
     color: var(--primary-gold);
     font-weight: 800;
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
-.awards h6 {
+.newsEvents h6 {
     color: var(--primary-blue);
     font-size: 2rem;
     margin-bottom: 1.5rem;
     font-weight: 700;
 }
 
-.mssg {
+.newsText {
     font-size: 1.5rem;
     line-height: 1.6;
     color: #666;
     margin-bottom: 2.5rem;
 }
 
-.items a {
+.newsContent a {
     padding: 1.2rem 2.5rem;
     background-color: var(--primary-blue);
     color: var(--white);
@@ -394,7 +412,7 @@ main {
     transition: var(--transition);
 }
 
-.items a:hover {
+.newsContent a:hover {
     background-color: var(--accent-gold);
     transform: translateX(5px);
 }
