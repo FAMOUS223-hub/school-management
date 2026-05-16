@@ -2,8 +2,8 @@
 
 /* Hero Section */
 .crecheHero {
-    height: 80vh;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/crechehero.jpg);
+    height: 85vh;
+    background: linear-gradient(135deg, rgba(0, 44, 83, 0.75), rgba(201, 169, 75, 0.3)), url(../img/creceh.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,43 +17,142 @@
     overflow: hidden;
 }
 
-.crecheHero::after {
+.crecheHero::before {
     content: '';
     position: absolute;
-    bottom: -10px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 40px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,213.3C672,203,768,149,864,133.3C960,117,1056,139,1152,160C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
-    background-size: cover;
+    height: 100%;
+    background: radial-gradient(circle at 30% 50%, rgba(201, 169, 75, 0.15), transparent 60%);
     pointer-events: none;
 }
 
-.heroContent {
-    z-index: 10;
-    padding-top: 5rem;
+.crecheHero::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,48C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 2;
 }
 
-.heroContent h1 {
+.crecheHero .heroContent {
+    z-index: 3;
+    position: relative;
+}
+
+.heroBadge {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: rgba(201, 169, 75, 0.25);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    border-radius: 10rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+}
+
+.crecheHero .heroContent h1 {
     font-size: 8rem;
     font-weight: 800;
-    color: var(--primary-gold);
+    color: var(--white);
     margin-bottom: 1.5rem;
     line-height: 1.1;
     text-transform: uppercase;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.heroContent p {
-    font-size: 1.8rem;
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    color: #e0e0e0;
+.crecheHero .heroContent p {
+    font-size: 2rem;
+    max-width: 600px;
+    margin: 0 auto 3.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+
+.heroBtns {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mainBtn {
+    background-color: var(--primary-gold);
+    color: var(--white);
+    padding: 1.5rem 3.5rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.secBtn {
+    background-color: transparent;
+    color: var(--white);
+    padding: 1.5rem 3.5rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    border: 2px solid var(--white);
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.mainBtn:hover {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.secBtn:hover {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    transform: translateY(-3px);
+}
+
+/* --- Container --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* --- Section Label --- */
+.sectionLabel {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primary-gold);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.goldText {
+    color: var(--primary-gold);
 }
 
 /* --- Overview Section --- */
 .overview {
-    padding: 10rem 2rem;
+    padding: 12rem 0 8rem;
+    background: var(--white);
 }
 
 .overviewGrid {
@@ -61,259 +160,349 @@
     gap: 8rem;
     align-items: flex-start;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .overviewText {
     flex: 1;
-    max-width: 600px;
+    max-width: 580px;
 }
 
 .overviewText h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 800;
     color: var(--primary-blue);
-    line-height: 1.1;
+    line-height: 1.15;
     margin-bottom: 3rem;
-    position: relative;
-    padding-bottom: 2rem;
 }
 
-.overviewText h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 6rem;
-    height: 4px;
-    background-color: var(--primary-gold);
-}
-
-.overviewText p {
+.overviewText > p {
     font-size: 1.6rem;
-    line-height: 1.8;
-    color: var(--text-dark);
-    margin-bottom: 2.5rem;
-    opacity: 0.85;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 2rem;
 }
 
+/* --- Care Grid --- */
 .careGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 2rem;
-    margin-top: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 4rem;
 }
 
 .careCard {
-    padding: 3rem 2rem;
-    background-color: #f8f9fa;
-    border-radius: 2.5rem;
+    padding: 2.5rem 1.5rem;
+    background: linear-gradient(145deg, #fdfcfb, #f8f9fa);
+    border-radius: 2rem;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
     transition: var(--transition);
-    border: 1px solid #eee;
+    border: 1px solid rgba(201, 169, 75, 0.1);
 }
 
 .careCard:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    box-shadow: 0 15px 40px rgba(201, 169, 75, 0.15);
     border-color: var(--primary-gold);
 }
 
-.careCard span {
+.careIcon {
     display: block;
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.careCard h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
 }
 
 .careCard p {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--primary-blue);
-    margin-bottom: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: #888;
+    margin: 0;
 }
 
-/* --- Image Gallery --- */
-.images {
+/* --- Overview Images --- */
+.overviewImages {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
-.images img {
+.overviewImages img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 2.5rem;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
 }
 
-.images img:hover {
-    transform: scale(1.03);
+.overviewImages img:hover {
+    transform: scale(1.02);
 }
 
-.image-main {
+.imageMain {
     grid-row: span 2;
 }
 
-.image-main img {
-    height: 55rem;
+.imageMain img {
+    height: 52rem;
 }
 
-.image-sub img {
-    height: 26.5rem;
+.imageSub img {
+    height: 25rem;
+}
+
+/* --- Stats Section --- */
+.statsSection {
+    padding: 8rem 2rem;
+    background: linear-gradient(135deg, var(--primary-blue), #003d6b);
+    position: relative;
+    overflow: hidden;
+}
+
+.statsSection::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201, 169, 75, 0.08), transparent 70%);
+    pointer-events: none;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.statNumber {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: var(--primary-gold);
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* --- Curriculum Section --- */
 .curriculum {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10rem 5rem;
-    align-items: center;
-    text-align: center;
-    background-image: url(../img/creche2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 44, 83, 0.8);
-    background-blend-mode: overlay;
-    background-attachment: fixed;
-    color: var(--white);
-}
-
-.curriculum h2 {
-    font-size: 3.5rem;
-    color: var(--primary-gold);
-    margin-bottom: 5rem;
-    border-bottom: 4px solid var(--primary-gold);
-    font-weight: 800;
-    padding-bottom: 1rem;
-}
-
-.curriculum p {
-    font-size: 1.8rem;
-    margin-bottom: 3rem;
-    max-width: 800px;
-}
-
-.curriculumGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    max-width: 1000px;
-}
-
-.curriculumCard {
-    background-color: var(--white);
-    padding: 3rem;
-    border-radius: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    color: var(--text-dark);
-}
-
-.curriculumCard span {
-    font-size: 5rem;
-    margin-bottom: 1rem;
-}
-
-.curriculumCard h3 {
-    font-size: 2rem;
-    color: var(--primary-blue);
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.curriculumCard p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin: 0;
-    color: #666;
-}
-
-/* --- Timetable Section --- */
-.timetable {
-    padding: 10rem 2rem;
-    text-align: center;
-}
-
-.timetable h4 {
-    font-weight: 800;
-    font-size: 3.5rem;
-    color: var(--primary-gold);
-    margin-bottom: 5rem;
-}
-
-.tablesGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.tableCard {
-    padding: 3rem;
-    background-color: var(--white);
-    border-radius: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    border-left: 6px solid var(--primary-gold);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-.time {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: var(--text-dark);
-    margin-bottom: 1.5rem;
-}
-
-.activity {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--primary-gold);
-    margin-bottom: 1rem;
-}
-
-.tableCard p {
-    font-size: 1.5rem;
-    line-height: 1.7;
-    color: #666;
-}
-
-/* --- Facilities --- */
-.facilities {
-    padding: 10rem 2rem;
-    background: var(--white);
+    padding: 12rem 0;
+    background: var(--light-gray);
 }
 
 .sectionHeader {
     text-align: center;
     margin-bottom: 6rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sectionHeader h2 {
-    font-size: 3.5rem;
-    color: var(--primary-gold);
+    font-size: 4rem;
+    color: var(--primary-blue);
     margin-bottom: 2rem;
     font-weight: 800;
+    line-height: 1.15;
+}
+
+.sectionHeader p {
+    font-size: 1.6rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.curriculumGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.currCard {
+    background-color: var(--white);
+    padding: 3.5rem 3rem;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+    transition: var(--transition);
+    border: 1px solid #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.currCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary-gold);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: var(--transition);
+}
+
+.currCard:hover::before {
+    transform: scaleY(1);
+}
+
+.currCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-gold);
+}
+
+.currIconWrap {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(135deg, rgba(201, 169, 75, 0.1), rgba(201, 169, 75, 0.05));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.currIcon {
+    font-size: 2.8rem;
+}
+
+.currCard h3 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
+
+.currCard p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #666;
+    margin: 0;
+}
+
+/* --- Timetable Section --- */
+.timetable {
+    padding: 12rem 0;
+    background: var(--white);
+}
+
+.tablesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tableCard {
+    padding: 0;
+    background-color: var(--white);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+    transition: var(--transition);
+    border: 1px solid #f0f0f0;
+    overflow: hidden;
+}
+
+.tableCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.timeBadge {
+    display: block;
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--white);
+    background: var(--primary-blue);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.tableCard:nth-child(even) .timeBadge {
+    background: var(--primary-gold);
+}
+
+.tableContent {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tableContent h3 {
+    font-size: 1.7rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.tableContent p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.activityTag {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: rgba(201, 169, 75, 0.1);
+    color: var(--primary-gold);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5rem;
+    align-self: flex-start;
+}
+
+/* --- Facilities Section --- */
+.facilities {
+    padding: 12rem 0;
+    background: var(--light-gray);
 }
 
 .facilityGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -323,20 +512,21 @@
     position: relative;
     border-radius: 2.5rem;
     overflow: hidden;
-    height: 40rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    height: 45rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     transition: var(--transition);
+    cursor: pointer;
 }
 
 .facilityCard img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition);
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .facilityCard:hover img {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .facilityOverlay {
@@ -344,113 +534,419 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 3rem;
-    background: linear-gradient(to top, rgba(0, 44, 83, 0.9), transparent);
+    padding: 4rem 3rem 3rem;
+    background: linear-gradient(to top, rgba(0, 44, 83, 0.95), transparent);
     color: var(--white);
     transition: var(--transition);
+}
+
+.facilityCard:hover .facilityOverlay {
+    padding-bottom: 4rem;
 }
 
 .facilityOverlay h3 {
     font-size: 2.4rem;
     margin-bottom: 1rem;
     color: var(--primary-gold);
+    font-weight: 700;
 }
 
 .facilityOverlay p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     opacity: 0.9;
+    line-height: 1.6;
+    margin: 0;
 }
 
-/* --- Testimonials --- */
-.testimonials {
-    padding: 10rem 2rem;
-    background: #f8f9fa;
+/* --- Why Love Section --- */
+.whyLove {
+    padding: 12rem 0;
+    background: var(--white);
+}
+
+.loveGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.loveCard {
+    padding: 3.5rem 2.5rem;
+    background: var(--white);
+    border-radius: 2.5rem;
     text-align: center;
+    transition: var(--transition);
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+}
+
+.loveCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border-color: rgba(201, 169, 75, 0.3);
+}
+
+.loveIcon {
+    display: block;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.loveCard h3 {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
+
+.loveCard p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #666;
+    margin: 0;
+}
+
+/* --- Testimonials Section --- */
+.testimonials {
+    padding: 12rem 0;
+    background: var(--light-gray);
 }
 
 .testimonialsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .testimonialCard {
     background: var(--white);
-    padding: 5rem 4rem;
+    padding: 4rem 3.5rem;
     border-radius: 2.5rem;
     position: relative;
     text-align: left;
     transition: var(--transition);
-    border: 1px solid #eee;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
 }
 
 .testimonialCard:hover {
-    transform: translateY(-1rem);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
 }
 
-.quote-icon {
-    font-size: 8rem;
+.quoteIcon {
+    font-size: 6rem;
     color: var(--primary-gold);
     position: absolute;
-    top: 0;
-    left: 2rem;
+    top: 1rem;
+    left: 2.5rem;
     font-family: serif;
-    opacity: 0.3;
+    opacity: 0.2;
+    line-height: 1;
 }
 
-.testimonial-text {
-    font-size: 1.6rem;
+.testimonialText {
+    font-size: 1.5rem;
     line-height: 1.8;
-    color: var(--text-dark);
+    color: #555;
     font-style: italic;
     margin-bottom: 3rem;
     position: relative;
     z-index: 1;
 }
 
-.testimonial-author {
+.testimonialAuthor {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 2rem;
 }
 
-.author-info h4 {
-    font-size: 1.8rem;
+.authorInfo h4 {
+    font-size: 1.7rem;
     color: var(--primary-blue);
     font-weight: 700;
+    margin: 0;
 }
 
-.author-info span {
-    font-size: 1.4rem;
+.authorInfo span {
+    font-size: 1.2rem;
     color: var(--primary-gold);
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* --- Responsive --- */
+/* --- CTA Section --- */
+.ctaSection {
+    padding: 12rem 0;
+}
+
+.ctaBox {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #003d6b 100%);
+    padding: 8rem 4rem;
+    border-radius: 3rem;
+    text-align: center;
+    color: var(--white);
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaBox::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201, 169, 75, 0.1), transparent 70%);
+    pointer-events: none;
+}
+
+.ctaBox h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    position: relative;
+}
+
+.ctaBox p {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.ctaBtns {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    position: relative;
+}
+
+.ctaBox .mainBtn {
+    background: var(--primary-gold);
+    color: var(--white);
+}
+
+.ctaBox .mainBtn:hover {
+    background: var(--white);
+    color: var(--primary-blue);
+}
+
+.ctaBox .secBtn {
+    border-color: var(--primary-gold);
+    color: var(--white);
+}
+
+.ctaBox .secBtn:hover {
+    background: var(--white);
+    color: var(--primary-blue);
+    border-color: var(--white);
+}
+
+/* ====== RESPONSIVE - CRECHE PAGE ====== */
+
 @media (max-width: 1024px) {
+    .crecheHero .heroContent h1 {
+        font-size: 5.5rem;
+    }
+
     .overviewGrid {
         flex-direction: column;
-        gap: 6rem;
+        gap: 5rem;
         align-items: center;
     }
 
     .overviewText {
-        max-width: 800px;
+        max-width: 100%;
         text-align: center;
     }
 
-    .overviewText h2::after {
-        left: 50%;
-        transform: translateX(-50%);
+    .careGrid {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .images {
+    .overviewImages {
         width: 100%;
-        max-width: 800px;
+        max-width: 600px;
+    }
+
+    .imageMain img {
+        height: 40rem;
+    }
+
+    .imageSub img {
+        height: 19rem;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .curriculumGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tablesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .loveGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonialsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .crecheHero {
+        height: 60vh;
+        background-attachment: scroll;
+    }
+
+    .crecheHero .heroContent h1 {
+        font-size: 4rem;
+    }
+
+    .crecheHero .heroContent p {
+        font-size: 1.6rem;
+    }
+
+    .overview {
+        padding: 8rem 0 5rem;
+    }
+
+    .overviewText h2 {
+        font-size: 3rem;
+    }
+
+    .careGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overviewImages {
+        grid-template-columns: 1fr;
+    }
+
+    .imageMain {
+        grid-row: span 1;
+    }
+
+    .imageMain img {
+        height: 30rem;
+    }
+
+    .imageSub img {
+        height: 25rem;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .statNumber {
+        font-size: 3.5rem;
+    }
+
+    .curriculumGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .tablesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .facilityGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .facilityCard {
+        height: 35rem;
+    }
+
+    .loveGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonialsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ctaBox {
+        padding: 5rem 3rem;
+    }
+
+    .ctaBox h2 {
+        font-size: 2.8rem;
+    }
+
+    .ctaBtns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroBtns {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .crecheHero .heroContent h1 {
+        font-size: 3.2rem;
+    }
+
+    .overviewText h2 {
+        font-size: 2.5rem;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .statNumber {
+        font-size: 3rem;
+    }
+
+    .curriculum {
+        padding: 8rem 0;
+    }
+
+    .timetable {
+        padding: 8rem 0;
+    }
+
+    .facilities {
+        padding: 8rem 0;
+    }
+
+    .testimonials {
+        padding: 8rem 0;
+    }
+
+    .ctaSection {
+        padding: 8rem 0;
+    }
+
+    .sectionHeader h2 {
+        font-size: 3rem;
     }
 }

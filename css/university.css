@@ -1,9 +1,9 @@
-/* --- SHS Page: Premium Design --- */
+/* --- University Page: Premium Design --- */
 
 /* Hero Section */
-.shsHero {
-    height: 90vh;
-    background: linear-gradient(135deg, rgba(0, 44, 83, 0.75), rgba(0, 26, 51, 0.85)), url(../img/shs.jpg);
+.uniHero {
+    height: 92vh;
+    background: linear-gradient(135deg, rgba(0, 44, 83, 0.85), rgba(0, 26, 51, 0.9)), url(../img/uni.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,39 +17,35 @@
     overflow: hidden;
 }
 
-.shsHero::before {
+.uniHero::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background:
-        radial-gradient(circle at 20% 80%, rgba(201, 169, 75, 0.18), transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.07), transparent 40%),
-        linear-gradient(135deg, transparent 35%, rgba(255, 255, 255, 0.04) 45%, transparent 55%);
+    background: radial-gradient(circle at 30% 70%, rgba(201, 169, 75, 0.12), transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.05), transparent 40%);
     pointer-events: none;
 }
 
-.shsHero::after {
+.uniHero::after {
     content: '';
     position: absolute;
     bottom: -2px;
     left: 0;
     width: 100%;
-    height: 160px;
-    background:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 160'%3E%3Cpath fill='%23c9a94b' fill-opacity='0.15' d='M0,112 C160,144 320,80 480,112 C640,144 800,80 960,112 C1120,144 1280,80 1440,112 L1440,160 L0,160 Z'/%3E%3C/svg%3E"),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 160'%3E%3Cpath fill='%23ffffff' fill-opacity='0.5' d='M0,72 C240,128 480,16 720,72 C960,128 1200,16 1440,72 L1440,160 L0,160 Z'/%3E%3C/svg%3E"),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 160'%3E%3Cpath fill='%23ffffff' d='M0,48 C180,96 360,0 540,48 C720,96 900,0 1080,48 C1260,96 1440,0 1440,48 L1440,160 L0,160 Z'/%3E%3C/svg%3E");
-    background-size: cover, cover, cover;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: bottom, bottom, bottom;
+    height: 120px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 200'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,96L48,101.3C96,107,192,117,288,112C384,107,480,85,576,90.7C672,96,768,128,864,133.3C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,200L1392,200C1344,200,1248,200,1152,200C1056,200,960,200,864,200C768,200,672,200,576,200C480,200,384,200,288,200C192,200,96,200,48,200L0,200Z'/%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='%23c9a94b' fill-opacity='0.15' d='M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,48C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z'/%3E%3C/svg%3E");
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, bottom;
     pointer-events: none;
     z-index: 2;
 }
 
-.shsHero .heroContent {
+.uniHero .heroContent {
     position: relative;
     z-index: 3;
 }
@@ -69,27 +65,27 @@
     margin-bottom: 2.5rem;
 }
 
-.shsHero .heroContent h1 {
+.uniHero .heroContent h1 {
     font-size: 8rem;
     font-weight: 900;
     color: var(--white);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     line-height: 1.1;
     text-transform: uppercase;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
 .goldText {
     color: var(--primary-gold);
 }
 
-.shsHero .heroContent p {
+.uniHero .heroContent p {
     font-size: 2rem;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto 3.5rem;
     color: rgba(255, 255, 255, 0.85);
     font-weight: 300;
-    letter-spacing: 1px;
+    line-height: 1.6;
 }
 
 .heroBtns {
@@ -110,6 +106,8 @@
     border-radius: 10rem;
     transition: var(--transition);
     display: inline-block;
+    cursor: pointer;
+    border: none;
 }
 
 .secBtn {
@@ -123,6 +121,7 @@
     border: 2px solid var(--white);
     transition: var(--transition);
     display: inline-block;
+    cursor: pointer;
 }
 
 .mainBtn:hover {
@@ -158,16 +157,16 @@
 }
 
 /* --- Overview Section --- */
-.shsOverview {
-    padding: 12rem 0 8rem;
+.uniOverview {
+    padding: 14rem 0 10rem;
     background: var(--white);
 }
 
 .overviewGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
     gap: 6rem;
-    align-items: center;
+    align-items: start;
 }
 
 .overviewText h2 {
@@ -185,12 +184,12 @@
     margin-bottom: 2rem;
 }
 
-.benefitList {
+.uniHighlights {
     list-style: none;
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 
-.benefitList li {
+.uniHighlights li {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     display: flex;
@@ -200,24 +199,40 @@
     line-height: 1.4;
 }
 
-.benefitIcon {
+.highlightIcon {
     font-size: 2.2rem;
     flex-shrink: 0;
+}
+
+.overviewBtns {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.overviewBtns .secBtn {
+    border-color: var(--primary-gold);
+    color: var(--primary-gold);
+}
+
+.overviewBtns .secBtn:hover {
+    background: var(--primary-gold);
+    color: var(--white);
 }
 
 .overviewStats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .statCard {
     background: var(--white);
-    padding: 3.5rem 2.5rem;
+    padding: 3rem 2rem;
     border-radius: 2rem;
     text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
     border: 1px solid #f0f0f0;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
     transition: var(--transition);
 }
 
@@ -229,7 +244,7 @@
 
 .statNumber {
     display: block;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
     color: var(--primary-gold);
     margin-bottom: 0.5rem;
@@ -237,19 +252,19 @@
 }
 
 .statLabel {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--primary-blue);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .statDetail {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #999;
 }
 
-/* --- Academic Tracks --- */
-.academicTracks {
+/* --- Faculties Section --- */
+.faculties {
     padding: 12rem 0;
     background: var(--light-gray);
 }
@@ -276,33 +291,32 @@
     line-height: 1.8;
 }
 
-.tracksGrid {
+.facultiesGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.trackCard {
+.facultyCard {
     background: var(--white);
-    padding: 3.5rem 2.5rem;
+    padding: 3.5rem 3rem;
     border-radius: 2rem;
-    text-align: center;
-    border: 1px solid #f0f0f0;
     transition: var(--transition);
+    border: 1px solid #f0f0f0;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
 }
 
-.trackCard:hover {
-    border-color: var(--primary-gold);
+.facultyCard:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-gold);
 }
 
-.trackIconWrap {
+.facultyIconWrap {
     width: 6rem;
     height: 6rem;
     border-radius: 1.5rem;
@@ -310,219 +324,322 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 2rem;
+    margin-bottom: 2rem;
 }
 
-.trackIcon {
+.facultyIcon {
     font-size: 2.8rem;
     filter: brightness(0) invert(1);
 }
 
-.trackCard h3 {
-    font-size: 2.2rem;
-    margin-bottom: 1.2rem;
+.facultyCard h3 {
+    font-size: 2rem;
     color: var(--primary-blue);
+    margin-bottom: 1.2rem;
     font-weight: 700;
 }
 
-.trackCard p {
+.facultyCard p {
     font-size: 1.4rem;
-    color: #666;
     line-height: 1.7;
+    color: #666;
     margin-bottom: 2rem;
     flex: 1;
 }
 
-.trackSubjects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    justify-content: center;
+.facultyPrograms {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.facultyPrograms li {
+    font-size: 1.3rem;
+    padding: 0.6rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: #555;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.facultyPrograms li:last-child {
+    border-bottom: none;
+}
+
+.facultyPrograms li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    color: var(--primary-gold);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.facultyLink {
+    color: var(--primary-gold);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-block;
     margin-top: auto;
 }
 
-.trackSubjects span {
-    display: inline-block;
-    padding: 0.4rem 1.2rem;
-    background: rgba(201, 169, 75, 0.1);
-    color: var(--primary-gold);
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
+.facultyLink:hover {
+    color: var(--primary-blue);
     letter-spacing: 1px;
-    border-radius: 5rem;
 }
 
-/* --- College Prep Section --- */
-.collegePrep {
+/* --- Campus Life Section --- */
+.campusLife {
     padding: 12rem 0;
     background: var(--white);
 }
 
-.prepGrid {
+.campusGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    align-items: start;
-}
-
-.prepContent h2 {
-    font-size: 4rem;
-    color: var(--primary-blue);
-    line-height: 1.15;
-    margin-bottom: 2.5rem;
-    font-weight: 800;
-}
-
-.prepContent > p {
-    font-size: 1.6rem;
-    line-height: 1.9;
-    color: #555;
-    margin-bottom: 4rem;
-}
-
-.prepFeatures {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-}
-
-.prepFeature {
-    display: grid;
-    grid-template-columns: 5rem 1fr;
-    gap: 2rem;
-    align-items: start;
-}
-
-.prepNumber {
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: var(--primary-gold);
-    line-height: 1;
-}
-
-.prepFeature h4 {
-    font-size: 1.8rem;
-    color: var(--primary-blue);
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-}
-
-.prepFeature p {
-    font-size: 1.4rem;
-    color: #666;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.prepStats {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    position: sticky;
-    top: 12rem;
-}
-
-.prepStatCard {
-    background: linear-gradient(135deg, var(--primary-blue), #003d6b);
-    padding: 3.5rem;
-    border-radius: 2rem;
-    color: var(--white);
-    text-align: center;
-    transition: var(--transition);
-}
-
-.prepStatCard:hover {
-    transform: translateX(5px);
-}
-
-.prepStatNumber {
-    display: block;
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: var(--primary-gold);
-    margin-bottom: 1rem;
-}
-
-.prepStatCard p {
-    font-size: 1.4rem;
-    color: rgba(255, 255, 255, 0.85);
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* --- Elite Facilities / Gallery --- */
-.eliteFacilities {
-    padding: 12rem 0;
-    background: var(--light-gray);
-}
-
-.facilityGallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 28rem;
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.galleryItem {
+.campusCard {
+    background: var(--white);
     border-radius: 2rem;
     overflow: hidden;
-    position: relative;
-    cursor: pointer;
-}
-
-.galleryItem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.galleryItem:hover img {
-    transform: scale(1.08);
-}
-
-.galleryOverlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 3rem 2.5rem 2.5rem;
-    background: linear-gradient(to top, rgba(0, 44, 83, 0.95), transparent);
-    color: var(--white);
-    opacity: 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
     transition: var(--transition);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    border: 1px solid #f0f0f0;
 }
 
-.galleryItem:hover .galleryOverlay {
-    opacity: 1;
+.campusCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
 }
 
-.galleryOverlay h3 {
-    font-size: 2rem;
-    color: var(--primary-gold);
-    margin-bottom: 0.5rem;
+.campusCard img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+}
+
+.campusCardBody {
+    padding: 2.5rem;
+}
+
+.campusCardBody h3 {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
     font-weight: 700;
 }
 
-.galleryOverlay p {
-    font-size: 1.3rem;
-    opacity: 0.9;
-    line-height: 1.5;
+.campusCardBody p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #666;
     margin: 0;
 }
 
-.galleryItem.wide {
-    grid-column: span 2;
+/* --- Admissions Section --- */
+.admissions {
+    padding: 12rem 0;
+    background: linear-gradient(135deg, var(--light-gray), var(--white));
 }
 
-.galleryItem.tall {
-    grid-row: span 2;
+.admissionsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto 5rem;
+}
+
+.admissionsCard {
+    background: var(--white);
+    padding: 3.5rem 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid #f0f0f0;
+    transition: var(--transition);
+    position: relative;
+}
+
+.admissionsCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    border-color: var(--primary-gold);
+}
+
+.admissionsStep {
+    display: block;
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(201, 169, 75, 0.15);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.admissionsCard h3 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.admissionsCard > p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.admissionsList {
+    list-style: none;
+}
+
+.admissionsList li {
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+    color: #555;
+}
+
+.admissionsList li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    color: var(--primary-gold);
+    font-weight: 900;
+}
+
+.admissionsCta {
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.admissionsCta .secBtn {
+    border-color: var(--primary-gold);
+    color: var(--primary-gold);
+}
+
+.admissionsCta .secBtn:hover {
+    background: var(--primary-gold);
+    color: var(--white);
+}
+
+/* --- Research Section --- */
+.research {
+    padding: 12rem 0;
+    background: var(--primary-blue);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.research::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201, 169, 75, 0.05), transparent 70%);
+    pointer-events: none;
+}
+
+.researchGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.researchText h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 2.5rem;
+}
+
+.researchText > p {
+    font-size: 1.6rem;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 4rem;
+}
+
+.researchStats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.researchStat {
+    text-align: center;
+}
+
+.rsNumber {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--primary-gold);
+    margin-bottom: 0.5rem;
+}
+
+.rsLabel {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.researchAreas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.areaCard {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    padding: 3rem 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+.areaCard:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-5px);
+}
+
+.areaIcon {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.areaCard h3 {
+    font-size: 1.8rem;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.areaCard p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
 }
 
 /* --- Testimonials --- */
@@ -614,7 +731,7 @@
 }
 
 /* --- CTA Section --- */
-.shsCta {
+.uniCta {
     padding: 8rem 0 12rem;
     background: var(--light-gray);
 }
@@ -640,18 +757,6 @@
     height: 50rem;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(201, 169, 75, 0.08), transparent 70%);
-    pointer-events: none;
-}
-
-.ctaBox::after {
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    right: -10%;
-    width: 40rem;
-    height: 40rem;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(201, 169, 75, 0.05), transparent 70%);
     pointer-events: none;
 }
 
@@ -699,50 +804,47 @@
     border-color: var(--white);
 }
 
-/* ====== RESPONSIVE - SHS PAGE ====== */
+/* ====== MODAL FORM ====== */
+
+/* ====== RESPONSIVE - UNIVERSITY PAGE ====== */
 
 @media (max-width: 1024px) {
-    .shsHero .heroContent h1 {
+    .uniHero .heroContent h1 {
         font-size: 5.5rem;
     }
 
     .overviewGrid {
         grid-template-columns: 1fr;
-        gap: 5rem;
+        gap: 4rem;
     }
 
     .overviewText {
         text-align: center;
     }
 
-    .benefitList li {
+    .uniHighlights li {
         justify-content: center;
     }
 
-    .tracksGrid {
+    .overviewBtns {
+        justify-content: center;
+    }
+
+    .facultiesGrid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .prepGrid {
+    .campusGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .admissionsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .researchGrid {
         grid-template-columns: 1fr;
         gap: 4rem;
-    }
-
-    .prepStats {
-        position: static;
-    }
-
-    .facilityGallery {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 25rem;
-    }
-
-    .galleryItem.wide {
-        grid-column: span 2;
-    }
-
-    .galleryItem.tall {
-        grid-row: span 1;
     }
 
     .testimonialsGrid {
@@ -751,21 +853,21 @@
 }
 
 @media (max-width: 768px) {
-    .shsHero {
+    .uniHero {
         height: 60vh;
         background-attachment: scroll;
     }
 
-    .shsHero .heroContent h1 {
+    .uniHero .heroContent h1 {
         font-size: 4rem;
     }
 
-    .shsHero .heroContent p {
+    .uniHero .heroContent p {
         font-size: 1.6rem;
     }
 
-    .shsOverview {
-        padding: 8rem 0 5rem;
+    .uniOverview {
+        padding: 8rem 0 6rem;
     }
 
     .overviewText h2 {
@@ -773,44 +875,65 @@
     }
 
     .overviewStats {
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .statNumber {
         font-size: 3rem;
     }
 
-    .tracksGrid {
+    .facultiesGrid {
         grid-template-columns: 1fr;
     }
 
-    .academicTracks {
+    .faculties {
         padding: 8rem 0;
     }
 
-    .collegePrep {
+    .campusGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .campusLife {
         padding: 8rem 0;
     }
 
-    .prepContent h2 {
+    .admissionsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .admissions {
+        padding: 8rem 0;
+    }
+
+    .research {
+        padding: 8rem 0;
+    }
+
+    .researchText h2 {
         font-size: 3rem;
     }
 
-    .eliteFacilities {
-        padding: 8rem 0;
+    .researchStats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
-    .facilityGallery {
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 22rem;
-    }
-
-    .galleryItem.wide {
-        grid-column: span 1;
+    .researchAreas {
+        grid-template-columns: 1fr;
     }
 
     .testimonialsGrid {
         grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        padding: 8rem 0;
+    }
+
+    .uniCta {
+        padding: 5rem 0 8rem;
     }
 
     .ctaBox {
@@ -830,15 +953,33 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .admissionsCta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overviewBtns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+
+    .modalBox {
+        padding: 3rem 2rem;
+    }
+
+    .modalHeader h2 {
+        font-size: 2.4rem;
+    }
 }
 
 @media (max-width: 480px) {
-    .shsHero {
-        height: 50vh;
-    }
-
-    .shsHero .heroContent h1 {
-        font-size: 3.2rem;
+    .uniHero .heroContent h1 {
+        font-size: 3rem;
     }
 
     .overviewText h2 {
@@ -849,41 +990,27 @@
         grid-template-columns: 1fr;
     }
 
-    .facilityGallery {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 25rem;
-    }
-
-    .prepContent h2 {
-        font-size: 2.5rem;
-    }
-
-    .prepFeature {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-    }
-
-    .prepStats {
-        gap: 1.5rem;
-    }
-
-    .prepStatCard {
-        padding: 2.5rem;
-    }
-
-    .prepStatNumber {
-        font-size: 3rem;
-    }
-
     .sectionHeader h2 {
         font-size: 3rem;
     }
 
-    .testimonials {
-        padding: 8rem 0;
+    .faculties {
+        padding: 6rem 0;
     }
 
-    .shsCta {
-        padding: 5rem 0 8rem;
+    .campusLife {
+        padding: 6rem 0;
+    }
+
+    .admissions {
+        padding: 6rem 0;
+    }
+
+    .research {
+        padding: 6rem 0;
+    }
+
+    .testimonials {
+        padding: 6rem 0;
     }
 }

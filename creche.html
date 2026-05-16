@@ -7,23 +7,22 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/creche.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
+
     <nav>
         <div class="navItems">
             <div class="brand">
-                <a href="index.html"><img src="img/logo.png" alt="Premium Academy Logo">PREMIUM <span>ACADEMY</span> </a>
+                <a href="index.html"><img src="img/logo.png" alt="Premium Academy Logo">PREMIUM <span>ACADEMY</span></a>
             </div>
-
             <ul id="navlinks">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="creche.html" class="active">Creche</a></li>
+                <li><a href="creche.html">Creche</a></li>
                 <li><a href="nursery.html">Nursery</a></li>
                 <li><a href="primary.html">Primary & JHS</a></li>
                 <li><a href="shs.html">SHS</a></li>
-                <li><a href="#">University</a></li>
+                <li><a href="university.html">University</a></li>
             </ul>
             <div id="openBtn"><img src="img/menu.png" alt="Menu"></div>
         </div>
@@ -31,173 +30,283 @@
 
     <header class="crecheHero">
         <div class="heroContent">
+            <span class="heroBadge">Ages 6 Months - 3 Years</span>
             <h1>Our Creche</h1>
             <p>A Second Home for Your Little Ones</p>
+            <div class="heroBtns">
+                <a href="#overview" class="mainBtn">Explore More</a>
+                <a href="#" class="secBtn modalTrigger">Apply Now</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="overview">
+        <section class="overview" id="overview">
             <div class="container">
                 <div class="overviewGrid">
                     <div class="overviewText">
-                        <span class="section-label">Safety & Care</span>
-                        <h2>Safety, Care & Early Growth</h2>
-                        <p>At Premium Academy Creche, we understand that your child's first years are the most critical. Our facility is designed to provide a safe, hygienic, and stimulating environment where infants and toddlers can thrive.</p>
-                        <p>Our dedicated caregivers are trained in early childhood development and first aid, ensuring your peace of mind while your child explores their world.</p>
-
+                        <span class="sectionLabel">Safety & Care</span>
+                        <h2>Where Little Minds <span class="goldText">Bloom Bright</span></h2>
+                        <p>At Premium Academy Creche, we understand that your child's first years are the most critical. Our facility is designed to provide a safe, hygienic, and stimulating environment where infants and toddlers can explore their world with confidence.</p>
+                        <p>Our dedicated caregivers are trained in early childhood development and pediatric first aid, ensuring your peace of mind while your child takes their first steps toward a lifetime of learning.</p>
                         <div class="careGrid">
                             <div class="careCard">
-                                <span>🧸</span>
-                                <p>Safe Play</p>
+                                <span class="careIcon"><i class="fa-solid fa-baby"></i></span>
+                                <h4>Safe Play</h4>
+                                <p>Soft padded zones</p>
                             </div>
                             <div class="careCard">
-                                <span>🥗</span>
-                                <p>Healthy Meals</p>
+                                <span class="careIcon"><i class="fa-solid fa-utensils"></i></span>
+                                <h4>Healthy Meals</h4>
+                                <p>Nutritionist approved</p>
                             </div>
                             <div class="careCard">
-                                <span>😴</span>
-                                <p>Nap Areas</p>
+                                <span class="careIcon"><i class="fa-solid fa-moon"></i></span>
+                                <h4>Nap Areas</h4>
+                                <p>Calm resting spaces</p>
                             </div>
                             <div class="careCard">
-                                <span>🩺</span>
-                                <p>Medical Care</p>
+                                <span class="careIcon"><i class="fa-solid fa-stethoscope"></i></span>
+                                <h4>Medical Care</h4>
+                                <p>On-site nurse</p>
+                            </div>
+                            <div class="careCard">
+                                <span class="careIcon"><i class="fa-solid fa-chalkboard-user"></i></span>
+                                <h4>Early Learning</h4>
+                                <p>Structured play</p>
+                            </div>
+                            <div class="careCard">
+                                <span class="careIcon"><i class="fa-solid fa-flag-checkered"></i></span>
+                                <h4>Outdoor Fun</h4>
+                                <p>Secure playground</p>
                             </div>
                         </div>
                     </div>
-                    <div class="images">
-                        <div class="image-main">
+                    <div class="overviewImages">
+                        <div class="imageMain">
                             <img src="img/creceh.jpg" alt="Safe and stimulating environment for kids">
                         </div>
-                        <div class="image-sub">
-                            <img src="img/creche2.jpg" alt="Happy toddlers learning together">
+                        <div class="imageSub">
+                            <img src="img/classroom.jpg" alt="Happy toddlers learning together">
                         </div>
-                        <div class="image-sub">
-                            <img src="img/creche3.jpg" alt="Focused play and development">
+                        <div class="imageSub">
+                            <img src="img/classroom2.jpg" alt="Focused play and development">
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="statsSection">
+            <div class="statsGrid">
+                <div class="statItem">
+                    <span class="statNumber" data-count="6">6</span>
+                    <span class="statLabel">Months Minimum Age</span>
+                </div>
+                <div class="statItem">
+                    <span class="statNumber">1:4</span>
+                    <span class="statLabel">Caregiver Ratio</span>
+                </div>
+                <div class="statItem">
+                    <span class="statNumber">100%</span>
+                    <span class="statLabel">Parent Satisfaction</span>
+                </div>
+                <div class="statItem">
+                    <span class="statNumber">24/7</span>
+                    <span class="statLabel">CCTV Monitoring</span>
                 </div>
             </div>
         </section>
 
         <section class="curriculum">
             <div class="container">
-                <h2>Our Curriculum</h2>
-                <p>Our play-based curriculum focuses on holistic development, combining sensory exploration, motor skills, and early learning foundations.</p>
-
+                <div class="sectionHeader">
+                    <span class="sectionLabel">Our Approach</span>
+                    <h2>Play-Based <span class="goldText">Curriculum</span></h2>
+                    <p>Our play-based curriculum focuses on holistic development, combining sensory exploration, motor skills, and early learning foundations for every child.</p>
+                </div>
                 <div class="curriculumGrid">
-                    <div class="curriculumCard">
-                        <span>🧠</span>
+                    <div class="currCard">
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-brain"></i></span>
+                        </div>
                         <h3>Cognitive Development</h3>
-                        <p>Problem-solving, memory games, and basic concepts through interactive play.</p>
+                        <p>Problem-solving, memory games, and basic concepts through interactive play and guided discovery.</p>
                     </div>
-                    <div class="curriculumCard">
-                        <span>💪</span>
+                    <div class="currCard">
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-dumbbell"></i></span>
+                        </div>
                         <h3>Physical Development</h3>
-                        <p>Gross and fine motor skills through movement activities and sensory play.</p>
+                        <p>Gross and fine motor skills through movement activities, sensory play, and outdoor exploration.</p>
                     </div>
-                    <div class="curriculumCard">
-                        <span>🎨</span>
+                    <div class="currCard">
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-palette"></i></span>
+                        </div>
                         <h3>Creative Expression</h3>
-                        <p>Art, music, and imaginative play to foster creativity and self-expression.</p>
+                        <p>Art, music, and imaginative play to foster creativity, self-expression, and confidence.</p>
                     </div>
-                    <div class="curriculumCard">
-                        <span>🤝</span>
+                    <div class="currCard">
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-handshake"></i></span>
+                        </div>
                         <h3>Social Skills</h3>
-                        <p>Group activities and peer interaction to build communication and sharing.</p>
+                        <p>Group activities and peer interaction to build communication, empathy, and sharing habits.</p>
                     </div>
-                    <div class="curriculumCard">
-                        <span>🌱</span>
+                    <div class="currCard">
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-seedling"></i></span>
+                        </div>
                         <h3>Emotional Growth</h3>
-                        <p>Building confidence, independence, and emotional awareness.</p>
+                        <p>Building confidence, independence, and emotional awareness in a nurturing environment.</p>
                     </div>
-                    <div class="curriculumCard">
-                        <span>📖</span>
+                    <div class="currCard">
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-book-open"></i></span>
+                        </div>
                         <h3>Language Development</h3>
-                        <p>Storytelling, songs, and basic vocabulary building.</p>
+                        <p>Storytelling, songs, rhymes, and basic vocabulary building for early communication skills.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-<div class="timetable">
-    <h4>Daily Schedule</h4>
-    <div class="tables">
-        <div class="tableInfo">
-            <span class="time">8:00 AM</span>
-            <p class="activity">Welcome & Free Play</p>
-            <p>Children arrive and engage in unstructured play to ease into the day.</p>
-        </div>
-        <div class="tableInfo">
-            <span class="time">9:00 AM</span>
-            <p class="activity">Circle Time</p>
-            <p>Group activities including songs, stories, and basic learning concepts.</p>
-        </div>
-        <div class="tableInfo">
-            <span class="time">10:00 AM</span>
-            <p class="activity">Snack Time</p>
-            <p>CHealthy snacks and social interaction in a relaxed setting</p>
-        </div>
-        <div class="tableInfo">
-            <span class="time">10:30 AM</span>
-            <p class="activity">Outdoor Play</p>
-            <p>Physical activities and exploration in our safe outdoor play area.</p>
-        </div>
-        <div class="tableInfo">
-            <span class="time">11:30 AM</span>
-            <p class="activity">Arts & Crafts</p>
-            <p>Creative activities to develop fine motor skills and imagination.</p>
-        </div>
-        <div class="tableInfo">
-            <span class="time">12:00 PM</span>
-            <p class="activity">Lunch Time</p>
-            <p>Nutritious meals prepared with care for growing bodies.</p>
-        </div>
-        <div class="tableInfo">
-            <span class="time">1:00 PM</span>
-            <p class="activity">Quiet Time</p>
-            <p>Rest and nap time in comfortable, individual sleeping areas.</p>
-        </div>
-        <div class="tableInfo">
-            <span class="time">3:00 PM</span>
-            <p class="activity">Afternoon Activities</p>
-            <p>Light learning activities and preparation for pickup.</p>
-        </div>
-        <div class="tableInfo">
-            <span class="time">5:00 PM</span>
-            <p class="activity">End of Day</p>
-            <p>Children depart with smiles and new experiences.</p>
-        </div>
-    </div>
-</div>
+        <section class="timetable">
+            <div class="container">
+                <div class="sectionHeader">
+                    <span class="sectionLabel">Daily Routine</span>
+                    <h2>Our <span class="goldText">Daily Schedule</span></h2>
+                    <p>Each day is thoughtfully structured to balance learning, play, rest, and nutrition for optimal development.</p>
+                </div>
+                <div class="tablesGrid">
+                    <div class="tableCard">
+                        <span class="timeBadge">8:00 AM</span>
+                        <div class="tableContent">
+                            <h3>Welcome & Free Play</h3>
+                            <p>Children arrive and engage in unstructured play to ease into the day with familiar friends.</p>
+                            <span class="activityTag">Arrival</span>
+                        </div>
+                    </div>
+                    <div class="tableCard">
+                        <span class="timeBadge">9:00 AM</span>
+                        <div class="tableContent">
+                            <h3>Circle Time</h3>
+                            <p>Group activities including songs, stories, weather chat, and basic learning concepts.</p>
+                            <span class="activityTag">Learning</span>
+                        </div>
+                    </div>
+                    <div class="tableCard">
+                        <span class="timeBadge">10:00 AM</span>
+                        <div class="tableContent">
+                            <h3>Snack Time</h3>
+                            <p>Healthy organic snacks served family-style to encourage social interaction and good habits.</p>
+                            <span class="activityTag">Nutrition</span>
+                        </div>
+                    </div>
+                    <div class="tableCard">
+                        <span class="timeBadge">10:30 AM</span>
+                        <div class="tableContent">
+                            <h3>Outdoor Play</h3>
+                            <p>Physical activities and exploration in our safe, shaded outdoor play area.</p>
+                            <span class="activityTag">Exercise</span>
+                        </div>
+                    </div>
+                    <div class="tableCard">
+                        <span class="timeBadge">11:30 AM</span>
+                        <div class="tableContent">
+                            <h3>Arts & Crafts</h3>
+                            <p>Creative activities including painting, modeling, and sensory bins for fine motor development.</p>
+                            <span class="activityTag">Creativity</span>
+                        </div>
+                    </div>
+                    <div class="tableCard">
+                        <span class="timeBadge">12:30 PM</span>
+                        <div class="tableContent">
+                            <h3>Lunch & Nap</h3>
+                            <p>Nutritious meals followed by supervised rest time in our calm nap room.</p>
+                            <span class="activityTag">Rest</span>
+                        </div>
+                    </div>
+                    <div class="tableCard">
+                        <span class="timeBadge">2:00 PM</span>
+                        <div class="tableContent">
+                            <h3>Sensory Play</h3>
+                            <p>Water, sand, and texture activities that stimulate the senses and encourage discovery.</p>
+                            <span class="activityTag">Discovery</span>
+                        </div>
+                    </div>
+                    <div class="tableCard">
+                        <span class="timeBadge">3:00 PM</span>
+                        <div class="tableContent">
+                            <h3>Pick-Up & Goodbye</h3>
+                            <p>End-of-day wrap-up with storytelling, then a smooth handover to parents.</p>
+                            <span class="activityTag">Departure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="facilities">
             <div class="container">
                 <div class="sectionHeader">
-                    <span class="section-label">Facilities</span>
-                    <h2>World-Class Facilities</h2>
+                    <span class="sectionLabel">Facilities</span>
+                    <h2>Purpose-Built for <span class="goldText">Little Ones</span></h2>
+                    <p>Our creche facility is designed from the ground up with your child's safety, comfort, and development in mind.</p>
                 </div>
                 <div class="facilityGrid">
                     <div class="facilityCard">
-                        <img src="img/classroom.jpg" alt="Infirmary">
+                        <img src="img/classroom.jpg" alt="Modern Infirmary">
                         <div class="facilityOverlay">
                             <h3>Modern Infirmary</h3>
-                            <p>On-site medical suite with a full-time certified pediatric nurse.</p>
+                            <p>On-site medical suite with a full-time certified pediatric nurse and regular doctor visits.</p>
                         </div>
                     </div>
                     <div class="facilityCard">
-                        <img src="img/classroom2.jpg" alt="Kitchen">
+                        <img src="img/classroom2.jpg" alt="Organic Kitchen">
                         <div class="facilityOverlay">
                             <h3>Organic Kitchen</h3>
-                            <p>Chef-prepared, nutritionist-approved organic meals served daily.</p>
+                            <p>Chef-prepared, nutritionist-approved organic meals served daily with fresh ingredients.</p>
                         </div>
                     </div>
                     <div class="facilityCard">
-                        <img src="img/stadium.jpg" alt="Security">
+                        <img src="img/stadium.jpg" alt="High-Tech Security">
                         <div class="facilityOverlay">
                             <h3>High-Tech Security</h3>
-                            <p>24/7 CCTV monitoring and biometric access control.</p>
+                            <p>24/7 CCTV monitoring, biometric access control, and secure entry protocols.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="whyLove">
+            <div class="container">
+                <div class="sectionHeader">
+                    <span class="sectionLabel">Why Parents Love Us</span>
+                    <h2>Trusted by <span class="goldText">Hundreds</span></h2>
+                </div>
+                <div class="loveGrid">
+                    <div class="loveCard">
+                        <span class="loveIcon"><i class="fa-solid fa-satellite-dish"></i></span>
+                        <h3>Real-Time Updates</h3>
+                        <p>Receive daily photo updates, progress reports, and instant notifications about your child's day through our parent app.</p>
+                    </div>
+                    <div class="loveCard">
+                        <span class="loveIcon"><i class="fa-solid fa-camera"></i></span>
+                        <h3>Live Video Access</h3>
+                        <p>Check in anytime with secure live video streaming of our classrooms and play areas.</p>
+                    </div>
+                    <div class="loveCard">
+                        <span class="loveIcon"><i class="fa-solid fa-clipboard-list"></i></span>
+                        <h3>Developmental Tracking</h3>
+                        <p>Regular milestone assessments and personalized development plans shared with parents monthly.</p>
+                    </div>
+                    <div class="loveCard">
+                        <span class="loveIcon"><i class="fa-solid fa-people-group"></i></span>
+                        <h3>Parent Community</h3>
+                        <p>Join our vibrant parent community with regular events, workshops, and family engagement activities.</p>
                     </div>
                 </div>
             </div>
@@ -206,34 +315,111 @@
         <section class="testimonials">
             <div class="container">
                 <div class="sectionHeader">
-                    <span class="section-label">Testimonials</span>
-                    <h2>What Our Parents Say</h2>
+                    <span class="sectionLabel">Testimonials</span>
+                    <h2>What Our <span class="goldText">Parents Say</span></h2>
                 </div>
                 <div class="testimonialsGrid">
                     <div class="testimonialCard">
-                        <div class="quote-icon">“</div>
-                        <p class="testimonial-text">"Premium Academy has been a blessing. The care my daughter receives is unparalleled. She loves her caregivers and has grown so much socially."</p>
-                        <div class="testimonial-author">
-                            <div class="author-info">
+                        <div class="quoteIcon">&ldquo;</div>
+                        <p class="testimonialText">Premium Academy has been a blessing for our family. The care our daughter receives is unparalleled. She has grown so much socially and emotionally since joining.</p>
+                        <div class="testimonialAuthor">
+                            <div class="authorInfo">
                                 <h4>Mrs. Ama Mensah</h4>
                                 <span>Mother of 2-year-old</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonialCard">
-                        <div class="quote-icon">“</div>
-                        <p class="testimonial-text">"The facilities are cleaner and more secure than any other creche I visited. The daily updates and peace of mind are worth every penny."</p>
-                        <div class="testimonial-author">
-                            <div class="author-info">
+                        <div class="quoteIcon">&ldquo;</div>
+                        <p class="testimonialText">The facilities are cleaner and more secure than any other creche I visited. The daily updates and live video access give us complete peace of mind every single day.</p>
+                        <div class="testimonialAuthor">
+                            <div class="authorInfo">
                                 <h4>Mr. Kofi Owusu</h4>
                                 <span>Father of 18-month-old</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonialCard">
+                        <div class="quoteIcon">&ldquo;</div>
+                        <p class="testimonialText">What sets Premium Academy apart is the genuine love the caregivers show. Our son asks to go to school on weekends. That says everything we need to know.</p>
+                        <div class="testimonialAuthor">
+                            <div class="authorInfo">
+                                <h4>Dr. Nana Addo</h4>
+                                <span>Mother of 3-year-old</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="ctaSection">
+            <div class="container">
+                <div class="ctaBox">
+                    <h2>Give Your Child the <span class="goldText">Best Start</span></h2>
+                    <p>Enroll today and give your little one the gift of a nurturing, stimulating, and safe early childhood education.</p>
+                    <div class="ctaBtns">
+                            <a href="#" class="mainBtn modalTrigger">Schedule a Visit</a>
+                            <a href="#" class="secBtn modalTrigger">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <div class="modalOverlay" id="modalOverlay">
+        <div class="modalBox">
+            <button class="modalClose" id="modalClose">&times;</button>
+            <div class="modalHeader">
+                <h2>Enroll at Our <span class="goldText">Creche</span></h2>
+                <p>Fill in your details and our admissions team will contact you within 24 hours to discuss your child's enrollment.</p>
+            </div>
+            <form class="modalForm" id="modalForm">
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="formName">Full Name *</label>
+                        <input type="text" id="formName" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="formEmail">Email Address *</label>
+                        <input type="email" id="formEmail" name="email" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="formPhone">Phone Number *</label>
+                        <input type="tel" id="formPhone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="formChild">Child's Name</label>
+                        <input type="text" id="formChild" name="child" placeholder="Enter your child's full name">
+                    </div>
+                </div>
+                <div class="formGroup">
+                    <label for="formProgram">Program of Interest *</label>
+                    <select id="formProgram" name="program" required>
+                        <option value="">Select a program</option>
+                        <option value="Creche Full-Time">Creche Full-Time (6 months - 3 years)</option>
+                        <option value="Creche Part-Time">Creche Part-Time</option>
+                        <option value="Creche After-School">Creche After-School Care</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label for="formMessage">Message</label>
+                    <textarea id="formMessage" name="message" placeholder="Tell us about your child, any special requirements, or questions you may have..." rows="4"></textarea>
+                </div>
+                <div class="formGroup checkboxGroup">
+                    <input type="checkbox" id="formConsent" name="consent" required>
+                    <label for="formConsent">I consent to Premium Academy processing my data for admissions purposes. *</label>
+                </div>
+                <button type="submit" class="formSubmit">Submit Enquiry</button>
+            </form>
+            <div class="modalFooter">
+                <p>Alternatively, call us on <strong><i class="fa-solid fa-phone"></i> +1 234 567 890</strong> or visit our campus</p>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footerInfo">
@@ -241,33 +427,30 @@
                 <h1>PREMIUM <span>ACADEMY</span></h1>
                 <p>Empowering the next generation of leaders through excellence in education and character building.</p>
             </div>
-
             <div class="links">
                 <h2>Quick Links</h2>
-                 <ul id="navlinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="creche.html">Creche</a></li>
-                <li><a href="nursery.html">Nursery</a></li>
-                <li><a href="primary.html">Primary & JHS</a></li>
-                <li><a href="shs.html">SHS</a></li>
-                <li><a href="#">University</a></li>
-            </ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="creche.html">Creche</a></li>
+                    <li><a href="nursery.html">Nursery</a></li>
+                    <li><a href="primary.html">Primary & JHS</a></li>
+                    <li><a href="shs.html">SHS</a></li>
+                    <li><a href="university.html">University</a></li>
+                </ul>
             </div>
-
             <div class="contact">
                 <h3>Location</h3>
-                <p class="location">📍 123 Education Lane, Elite City</p>
-                <p class="call">📞 +1 234 567 890</p>
-                <p>📧 info@premiumacademy.com</p>
+                <p class="location"><i class="fa-solid fa-location-dot"></i> 123 Education Lane, Elite City</p>
+                <p class="call"><i class="fa-solid fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fa-solid fa-envelope"></i> info@premiumacademy.com</p>
             </div>
-
             <div class="socialMedia">
                 <h4>Follow Us</h4>
                 <a href="#">Facebook</a>
                 <a href="#">Instagram</a>
                 <a href="#">LinkedIn</a>
             </div>
-            <p>Made with 💙  by Famous Graphics</p>
+            <p>Made with <i class="fa-solid fa-heart"></i> by Famous Graphics &copy; <span id="footerDate"></span></p>
         </div>
     </footer>
 

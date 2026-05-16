@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PREMIUM ACADEMY | Senior High School - Shaping Global Leaders</title>
+    <title>PREMIUM ACADEMY | SHS - Shaping Tomorrow's Leaders Today</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/shs.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
+
     <nav>
         <div class="navItems">
             <div class="brand">
-                <a href="index.html"><img src="img/logo.png" alt="Premium Academy Logo">PREMIUM <span>ACADEMY</span> </a>
+                <a href="index.html"><img src="img/logo.png" alt="Premium Academy Logo">PREMIUM <span>ACADEMY</span></a>
             </div>
-
             <ul id="navlinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="creche.html">Creche</a></li>
                 <li><a href="nursery.html">Nursery</a></li>
                 <li><a href="primary.html">Primary & JHS</a></li>
-                <li><a href="shs.html" class="active">SHS</a></li>
-                <li><a href="#">University</a></li>
+                <li><a href="shs.html">SHS</a></li>
+                <li><a href="university.html">University</a></li>
             </ul>
             <div id="openBtn"><img src="img/menu.png" alt="Menu"></div>
         </div>
@@ -33,98 +30,185 @@
 
     <header class="shsHero">
         <div class="heroContent">
-            <span class="badge">Elite Senior High School</span>
-            <h1>Architects of <span>The Future</span></h1>
-            <p>Our Senior High School program provides an intellectually stimulating environment where students are challenged to think critically, lead with integrity, and prepare for global excellence.</p>
-            <div class="heroCta">
-                <a href="#tracks" class="mainBtn">Explore Tracks</a>
-                <a href="primary.html#jhs" class="secBtn">Junior High (JHS)</a>
+            <span class="heroBadge">Ages 15 - 18 Years</span>
+            <h1>Senior High <span class="goldText">School</span></h1>
+            <p>Shaping Tomorrow's Leaders Today</p>
+            <div class="heroBtns">
+                <a href="#overview" class="mainBtn">Explore Programs</a>
+                <a href="#" class="secBtn modalTrigger">Apply Now</a>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="shsOverview">
+        <section class="shsOverview" id="overview">
             <div class="container">
                 <div class="overviewGrid">
                     <div class="overviewText">
-                        <span class="section-label">Why SHS?</span>
-                        <h2>A Bridge to Global Opportunities</h2>
-                        <p>At Premium Academy SHS, we transcend traditional education. We offer a dual-curriculum approach that combines national excellence with international standards, ensuring our graduates are prepared for the world's most prestigious universities.</p>
+                        <span class="sectionLabel">Academic Excellence</span>
+                        <h2>Where Vision Meets <span class="goldText">Achievement</span></h2>
+                        <p>Premium Academy's Senior High School program is designed for ambitious students who aspire to attend the world's best universities. Our rigorous academic curriculum, combined with leadership development and community service, creates well-rounded graduates ready to make an impact.</p>
+                        <p>With a strong track record of university placements and national examination excellence, our SHS program is recognized as one of the premier secondary education pathways in the region.</p>
                         <ul class="benefitList">
-                            <li><span class="icon">🎓</span> Advanced University Prep Program</li>
-                            <li><span class="icon">🌍</span> International Certification Tracks (SAT, IELTS)</li>
-                            <li><span class="icon">💡</span> Innovation & Entrepreneurship Hub</li>
-                            <li><span class="icon">🤝</span> Personalized Career Mentorship</li>
+                            <li>
+                                <span class="benefitIcon"><i class="fa-solid fa-graduation-cap"></i></span>
+                                <span>University preparation with dedicated college counseling</span>
+                            </li>
+                            <li>
+                                <span class="benefitIcon"><i class="fa-solid fa-briefcase"></i></span>
+                                <span>Internship and work experience opportunities</span>
+                            </li>
+                            <li>
+                                <span class="benefitIcon"><i class="fa-solid fa-globe"></i></span>
+                                <span>International exchange programs and global partnerships</span>
+                            </li>
+                            <li>
+                                <span class="benefitIcon"><i class="fa-solid fa-trophy"></i></span>
+                                <span>National and international academic competitions</span>
+                            </li>
                         </ul>
                     </div>
                     <div class="overviewStats">
                         <div class="statCard">
-                            <h3>98%</h3>
-                            <p>University Placement</p>
+                            <span class="statNumber">98%</span>
+                            <p class="statLabel">University Placement</p>
+                            <span class="statDetail">To top-tier universities worldwide</span>
                         </div>
                         <div class="statCard">
-                            <h3>A1</h3>
-                            <p>Average WASSCE Grade</p>
+                            <span class="statNumber">A1</span>
+                            <p class="statLabel">Average WASSCE Grade</p>
+                            <span class="statDetail">Consistently top-performing cohort</span>
+                        </div>
+                        <div class="statCard">
+                            <span class="statNumber">95%+</span>
+                            <p class="statLabel">Distinction Rate</p>
+                            <span class="statDetail">In core and elective subjects</span>
+                        </div>
+                        <div class="statCard">
+                            <span class="statNumber">30+</span>
+                            <p class="statLabel">University Partners</p>
+                            <span class="statDetail">Global recognition and pathways</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="support" class="academicTracks">
+        <section class="academicTracks">
             <div class="container">
                 <div class="sectionHeader">
-                    <span class="section-label">Student Success</span>
-                    <h2>Comprehensive Support</h2>
+                    <span class="sectionLabel">Specializations</span>
+                    <h2>Choose Your <span class="goldText">Academic Path</span></h2>
+                    <p>Students select from four specialized tracks, each designed to prepare them for specific university programs and career pathways.</p>
                 </div>
                 <div class="tracksGrid">
                     <div class="trackCard">
-                        <div class="trackIcon">🧠</div>
-                        <h3>Mentorship</h3>
-                        <p>One-on-one guidance to help students navigate challenges and set personal academic and career goals.</p>
+                        <div class="trackIconWrap">
+                            <span class="trackIcon"><i class="fa-solid fa-microscope"></i></span>
+                        </div>
+                        <h3>General Science</h3>
+                        <p>Core: Mathematics, English, Science. Electives: Physics, Chemistry, Biology, Elective Mathematics, ICT. Ideal for medicine, engineering, and research careers.</p>
+                        <div class="trackSubjects">
+                            <span>Physics</span>
+                            <span>Chemistry</span>
+                            <span>Biology</span>
+                            <span>Elective Math</span>
+                        </div>
                     </div>
                     <div class="trackCard">
-                        <div class="trackIcon">🛡️</div>
-                        <h3>Well-being</h3>
-                        <p>Dedicated counselors available to support the emotional and social growth of every student during their crucial high school years.</p>
+                        <div class="trackIconWrap">
+                            <span class="trackIcon"><i class="fa-solid fa-coins"></i></span>
+                        </div>
+                        <h3>Business</h3>
+                        <p>Core: Mathematics, English, Science. Electives: Accounting, Business Management, Economics, Elective Mathematics. Ideal for finance, entrepreneurship, and management.</p>
+                        <div class="trackSubjects">
+                            <span>Accounting</span>
+                            <span>Management</span>
+                            <span>Economics</span>
+                            <span>Elective Math</span>
+                        </div>
                     </div>
                     <div class="trackCard">
-                        <div class="trackIcon">🌟</div>
-                        <h3>University Prep</h3>
-                        <p>Expert college counseling, application guidance, and SAT/IELTS preparation workshops.</p>
+                        <div class="trackIconWrap">
+                            <span class="trackIcon"><i class="fa-solid fa-masks-theater"></i></span>
+                        </div>
+                        <h3>General Arts</h3>
+                        <p>Core: Mathematics, English, Science. Electives: Government, History, Geography, Literature, French. Ideal for law, journalism, diplomacy, and education.</p>
+                        <div class="trackSubjects">
+                            <span>Government</span>
+                            <span>History</span>
+                            <span>Literature</span>
+                            <span>French</span>
+                        </div>
+                    </div>
+                    <div class="trackCard">
+                        <div class="trackIconWrap">
+                            <span class="trackIcon"><i class="fa-solid fa-paintbrush"></i></span>
+                        </div>
+                        <h3>Visual Arts</h3>
+                        <p>Core: Mathematics, English, Science. Electives: Graphic Design, Painting & Sculpture, Textiles, General Knowledge in Art. Ideal for creative and design careers.</p>
+                        <div class="trackSubjects">
+                            <span>Graphic Design</span>
+                            <span>Painting</span>
+                            <span>Textiles</span>
+                            <span>Art History</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="tracks" class="academicTracks">
+        <section class="collegePrep">
             <div class="container">
-                <div class="sectionHeader">
-                    <span class="section-label">Specializations</span>
-                    <h2>Our Specialized Academic Tracks</h2>
-                    <p>Tailored pathways designed to align with your child's career aspirations and strengths.</p>
-                </div>
-                <div class="tracksGrid">
-                    <div class="trackCard">
-                        <span class="trackIcon">🔬</span>
-                        <h3>General Science</h3>
-                        <p>Advanced Physics, Chemistry, Biology, and Elective Math for future medical, engineering, and tech professionals.</p>
+                <div class="prepGrid">
+                    <div class="prepContent">
+                        <span class="sectionLabel">University Readiness</span>
+                        <h2>College Preparation <span class="goldText">Program</span></h2>
+                        <p>Our comprehensive college counseling program begins in Form 1 and continues through graduation, ensuring every student finds and gains admission to the right university.</p>
+                        <div class="prepFeatures">
+                            <div class="prepFeature">
+                                <span class="prepNumber">01</span>
+                                <div>
+                                    <h4>Academic Counseling</h4>
+                                    <p>Personalized course selection guidance aligned with university entry requirements and career goals.</p>
+                                </div>
+                            </div>
+                            <div class="prepFeature">
+                                <span class="prepNumber">02</span>
+                                <div>
+                                    <h4>University Applications</h4>
+                                    <p>Dedicated support for UCAS, Common App, and local university applications with essay coaching.</p>
+                                </div>
+                            </div>
+                            <div class="prepFeature">
+                                <span class="prepNumber">03</span>
+                                <div>
+                                    <h4>Standardized Test Prep</h4>
+                                    <p>SAT, ACT, and IELTS preparation integrated into the curriculum with mock testing.</p>
+                                </div>
+                            </div>
+                            <div class="prepFeature">
+                                <span class="prepNumber">04</span>
+                                <div>
+                                    <h4>Scholarship Guidance</h4>
+                                    <p>Access to scholarship databases, application support, and interview preparation for merit awards.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="trackCard">
-                        <span class="trackIcon">💼</span>
-                        <h3>Business</h3>
-                        <p>Accounting, Business Management, and Economics with a focus on leadership and real-world financial literacy.</p>
-                    </div>
-                    <div class="trackCard">
-                        <span class="trackIcon">🎨</span>
-                        <h3>Visual Arts</h3>
-                        <p>Graphic Design, Sculpture, and Textiles supported by digital media and traditional artistic techniques.</p>
-                    </div>
-                    <div class="trackCard">
-                        <span class="trackIcon">⚖️</span>
-                        <h3>General Arts</h3>
-                        <p>Literature, Government, History, and Languages for students pursuing law, social sciences, and international relations.</p>
+                    <div class="prepStats">
+                        <div class="prepStatCard">
+                            <span class="prepStatNumber">$2.5M+</span>
+                            <p>Scholarships awarded to graduates in the last 3 years</p>
+                        </div>
+                        <div class="prepStatCard">
+                            <span class="prepStatNumber">50+</span>
+                            <p>University acceptances from top 100 global universities</p>
+                        </div>
+                        <div class="prepStatCard">
+                            <span class="prepStatNumber">100%</span>
+                            <p>Of graduates placed in degree programs of their choice</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,32 +216,127 @@
 
         <section class="eliteFacilities">
             <div class="container">
-                <div class="facilityContent">
-                    <div class="facilityText">
-                        <span class="section-label">Our Campus</span>
-                        <h2>World-Class Infrastructure</h2>
-                        <p>We believe that a premium environment fosters premium thinking. Our SHS campus is equipped with cutting-edge technology and serene learning spaces.</p>
+                <div class="sectionHeader">
+                    <span class="sectionLabel">Campus Excellence</span>
+                    <h2>Elite <span class="goldText">Facilities</span></h2>
+                    <p>Our SHS students enjoy access to world-class facilities that enhance learning, research, and personal development.</p>
+                </div>
+                <div class="facilityGallery">
+                    <div class="galleryItem wide">
+                        <img src="img/stadium.jpg" alt="Sports Stadium">
+                        <div class="galleryOverlay">
+                            <h3>Olympic-Size Sports Complex</h3>
+                            <p>Multi-sport facilities including football, athletics, swimming, and basketball</p>
+                        </div>
                     </div>
-                    <div class="facilityGallery">
-                        <div class="galleryItem wide">
-                            <img src="img/shsmain.jpg" alt="Modern SHS Campus">
-                            <div class="galleryOverlay"><span>Digital Learning Hub</span></div>
+                    <div class="galleryItem tall">
+                        <img src="img/classroom.jpg" alt="Science Laboratory">
+                        <div class="galleryOverlay">
+                            <h3>Advanced Science Labs</h3>
+                            <p>State-of-the-art physics, chemistry, and biology laboratories</p>
                         </div>
-                        <div class="galleryItem">
-                            <img src="img/shs00.jpg" alt="Science Laboratory">
-                            <div class="galleryOverlay"><span>Advanced Lab</span></div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/classroom2.jpg" alt="Library">
+                        <div class="galleryOverlay">
+                            <h3>Research Library</h3>
+                            <p>Digital and physical resources for advanced research</p>
                         </div>
-                        <div class="galleryItem tall">
-                            <img src="img/shs001.jpg" alt="Library and Study Hall">
-                            <div class="galleryOverlay"><span>Elite Library</span></div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/shs.jpg" alt="ICT Center">
+                        <div class="galleryOverlay">
+                            <h3>ICT Innovation Hub</h3>
+                            <p>High-speed computing and technology innovation space</p>
                         </div>
-                        <div class="galleryItem">
-                            <img src="img/shs02.jpg" alt="Student Lounge">
-                            <div class="galleryOverlay"><span>Creative Space</span></div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/homehero2.jpg" alt="Performing Arts">
+                        <div class="galleryOverlay">
+                            <h3>Performing Arts Center</h3>
+                            <p>500-seat auditorium for drama, music, and cultural events</p>
                         </div>
-                        <div class="galleryItem wide">
-                            <img src="img/shs.jpg" alt="Student Lounge">
-                            <div class="galleryOverlay"><span>Creative Space</span></div>
+                    </div>
+                    <div class="galleryItem wide">
+                        <img src="img/nurseryhero.jpg" alt="Boarding Facilities">
+                        <div class="galleryOverlay">
+                            <h3>Premium Boarding Houses</h3>
+                            <p>Modern, comfortable boarding with 24/7 pastoral care and study support</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/primarysch.jpg" alt="Dining Hall">
+                        <div class="galleryOverlay">
+                            <h3>Executive Dining Hall</h3>
+                            <p>Restaurant-style dining with nutritionist-designed menus</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/creceh.jpg" alt="Health Center">
+                        <div class="galleryOverlay">
+                            <h3>School Health Center</h3>
+                            <p>24/7 medical facility with resident doctor and nurses</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem tall">
+                        <img src="img/jhs.jpg" alt="Student Lounge">
+                        <div class="galleryOverlay">
+                            <h3>Student Lounge & Recreation</h3>
+                            <p>Modern relaxation and socializing spaces for students</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/nursery.jpg" alt="Chapel">
+                        <div class="galleryOverlay">
+                            <h3>Multi-Faith Chapel</h3>
+                            <p>Quiet space for spiritual reflection and worship</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="sectionHeader">
+                    <span class="sectionLabel">Testimonials</span>
+                    <h2>Success <span class="goldText">Stories</span></h2>
+                </div>
+                <div class="testimonialsGrid">
+                    <div class="testimonialCard">
+                        <div class="testimonialQuote">
+                            <p>Premium Academy gave me the confidence and academic foundation to pursue my dream of studying medicine. The science program is exceptional, and the teachers genuinely care about each student's success.</p>
+                        </div>
+                        <div class="testimonialAuthor">
+                            <div class="authorAvatar">AA</div>
+                            <div class="authorInfo">
+                                <h4>Abena Adjei</h4>
+                                <span>Alumna, Class of 2024 | University of Ghana Medical School</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonialCard">
+                        <div class="testimonialQuote">
+                            <p>The college counseling program was instrumental in my success. I received guidance every step of the way, from choosing the right courses to preparing my application essays. I am grateful for the support.</p>
+                        </div>
+                        <div class="testimonialAuthor">
+                            <div class="authorAvatar">KM</div>
+                            <div class="authorInfo">
+                                <h4>Kwame Mensah</h4>
+                                <span>Alumnus, Class of 2023 | University of Pennsylvania</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonialCard">
+                        <div class="testimonialQuote">
+                            <p>What sets Premium Academy apart is the leadership development. I graduated not just with excellent grades, but with the skills to lead, communicate, and make a difference in my community.</p>
+                        </div>
+                        <div class="testimonialAuthor">
+                            <div class="authorAvatar">EO</div>
+                            <div class="authorInfo">
+                                <h4>Esi Osei</h4>
+                                <span>Alumna, Class of 2024 | University of Cape Coast</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -167,16 +346,67 @@
         <section class="shsCta">
             <div class="container">
                 <div class="ctaBox">
-                    <h2>Join the Elite League of Scholars</h2>
-                    <p>Applications are now being reviewed for the upcoming academic year. Limited spaces available for high-achieving students.</p>
+                    <h2>Shape Your Future at <span class="goldText">Premium Academy</span></h2>
+                    <p>Join a community of ambitious scholars and future leaders. Applications for the next academic year are now being accepted.</p>
                     <div class="ctaBtns">
-                        <a href="#" class="mainBtn">Apply Online</a>
-                        <a href="#" class="secBtn">Admissions Office</a>
+                        <a href="#" class="mainBtn modalTrigger">Apply for Admission</a>
+                        <a href="#" class="secBtn modalTrigger">Download Prospectus</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <div class="modalOverlay" id="modalOverlay">
+        <div class="modalBox">
+            <button class="modalClose" id="modalClose">&times;</button>
+            <div class="modalHeader">
+                <h2>Apply to Senior <span class="goldText">High School</span></h2>
+                <p>Fill in your details and our admissions team will contact you within 24 hours to discuss your enrollment.</p>
+            </div>
+            <form class="modalForm" id="modalForm">
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="formName">Full Name *</label>
+                        <input type="text" id="formName" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="formEmail">Email Address *</label>
+                        <input type="email" id="formEmail" name="email" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="formPhone">Phone Number *</label>
+                        <input type="tel" id="formPhone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="formProgram">Program of Interest *</label>
+                        <select id="formProgram" name="program" required>
+                            <option value="">Select a program</option>
+                            <option value="General Science">General Science</option>
+                            <option value="Business">Business</option>
+                            <option value="General Arts">General Arts</option>
+                            <option value="Visual Arts">Visual Arts</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formGroup">
+                    <label for="formMessage">Message</label>
+                    <textarea id="formMessage" name="message" placeholder="Tell us about your academic background, interests, or any questions you may have..." rows="4"></textarea>
+                </div>
+                <div class="formGroup checkboxGroup">
+                    <input type="checkbox" id="formConsent" name="consent" required>
+                    <label for="formConsent">I consent to Premium Academy processing my data for admissions purposes. *</label>
+                </div>
+                <button type="submit" class="formSubmit">Submit Enquiry</button>
+            </form>
+            <div class="modalFooter">
+                <p>Alternatively, call us on <strong><i class="fa-solid fa-phone"></i> +1 234 567 890</strong> or visit our campus</p>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footerInfo">
@@ -184,33 +414,30 @@
                 <h1>PREMIUM <span>ACADEMY</span></h1>
                 <p>Empowering the next generation of leaders through excellence in education and character building.</p>
             </div>
-
             <div class="links">
                 <h2>Quick Links</h2>
-                 <ul id="navlinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="creche.html">Creche</a></li>
-                <li><a href="nursery.html">Nursery</a></li>
-                <li><a href="primary.html">Primary & JHS</a></li>
-                <li><a href="shs.html">SHS</a></li>
-                <li><a href="#">University</a></li>
-            </ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="creche.html">Creche</a></li>
+                    <li><a href="nursery.html">Nursery</a></li>
+                    <li><a href="primary.html">Primary & JHS</a></li>
+                    <li><a href="shs.html">SHS</a></li>
+                    <li><a href="university.html">University</a></li>
+                </ul>
             </div>
-
             <div class="contact">
                 <h3>Location</h3>
-                <p class="location">📍 123 Education Lane, Elite City</p>
-                <p class="call">📞 +1 234 567 890</p>
-                <p>📧 info@premiumacademy.com</p>
+                <p class="location"><i class="fa-solid fa-location-dot"></i> 123 Education Lane, Elite City</p>
+                <p class="call"><i class="fa-solid fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fa-solid fa-envelope"></i> info@premiumacademy.com</p>
             </div>
-
             <div class="socialMedia">
                 <h4>Follow Us</h4>
                 <a href="#">Facebook</a>
                 <a href="#">Instagram</a>
                 <a href="#">LinkedIn</a>
             </div>
-            <p>Made with 💙  by Famous Graphics</p>
+            <p>Made with <i class="fa-solid fa-heart"></i> by Famous Graphics &copy; <span id="footerDate"></span></p>
         </div>
     </footer>
 

@@ -7,6 +7,13 @@
     --light-gray: #f4f4f4;
     --text-dark: #333333;
     --text-muted: #b0c4de;
+    --off-white: #f8f9fa;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.08);
+    --shadow-premium: 0 20px 60px rgba(0, 0, 0, 0.1);
+    --radius-sm: 1rem;
+    --radius-md: 1.5rem;
+    --radius-lg: 2.5rem;
     --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     scroll-behavior: smooth;
 }
@@ -88,10 +95,15 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    /* color: var(--white); */
-    /* background-color: var(--primary-gold); */
-    border-bottom: 5px solid var(--accent-gold);
-    /* border-radius: 0.5rem; */
+    color: var(--white);
+    background-color: var(--primary-gold);
+    border-radius: 0.5rem;
+}
+
+nav ul li a.active{
+    color: var(--white);
+    background-color: var(--primary-gold);
+    border-radius: 0.5rem;
 }
 
 #openBtn, #closeBtn{
@@ -224,6 +236,219 @@ footer::before {
     letter-spacing: 1px;
 }
 
+/* ====== MODAL FORM (Shared Across All Pages) ====== */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.modalOverlay.active {
+    display: flex;
+}
+
+.modalBox {
+    background: var(--white);
+    border-radius: 2.5rem;
+    max-width: 600px;
+    width: 100%;
+    padding: 4rem;
+    position: relative;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+    animation: modalSlideIn 0.3s ease-out;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modalClose {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    background: var(--light-gray);
+    font-size: 2.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    transition: var(--transition);
+    line-height: 1;
+}
+
+.modalClose:hover {
+    background: var(--primary-gold);
+    color: var(--white);
+    transform: rotate(90deg);
+}
+
+.modalHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-right: 3rem;
+}
+
+.modalHeader h2 {
+    font-size: 2.8rem;
+    color: var(--primary-blue);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.modalHeader p {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.modalForm {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.formGroup label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    padding: 1.2rem 1.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 1.2rem;
+    font-size: 1.4rem;
+    font-family: inherit;
+    transition: var(--transition);
+    background: #fafafa;
+    color: var(--text-dark);
+    outline: none;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    border-color: var(--primary-gold);
+    background: var(--white);
+    box-shadow: 0 0 0 4px rgba(201, 169, 75, 0.1);
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 10rem;
+}
+
+.checkboxGroup {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.checkboxGroup input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+    accent-color: var(--primary-gold);
+    flex-shrink: 0;
+}
+
+.checkboxGroup label {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.formSubmit {
+    width: 100%;
+    text-align: center;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    background-color: var(--primary-gold);
+    color: var(--white);
+    border: none;
+    border-radius: 10rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.formSubmit:hover {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modalFooter {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.modalFooter p {
+    font-size: 1.3rem;
+    color: #888;
+    line-height: 1.6;
+}
+
+@media (max-width: 48rem) {
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+    .modalBox {
+        padding: 3rem 2rem;
+    }
+    .modalHeader h2 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .modalBox {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+/* ====== End Modal Styles ====== */
+
 @media (min-width: 144.1rem) {
   html { font-size: 68%; }
 }
@@ -248,42 +473,28 @@ footer::before {
     nav{
         position: relative;
     }
-    .navItems {
-        justify-content: space-between;
-        gap: 0;
-        padding: 1.5rem 2rem;
-    }
     nav ul{
-        margin-left: auto;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         display: none;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
         flex-direction: column;
         background-color: var(--white);
         z-index: 100;
-        width: 25rem;
+        width: 20rem;
+        margin-left: auto;
         padding: 2rem;
-        border-radius: 0 0 1.5rem 1.5rem;
+        border-radius: 0 0 2rem 2rem;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        text-align: left;
     }
     
     nav ul.active{
         display: flex;
     }
-
-    nav ul li {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    nav ul li a {
-        display: block;
-        font-size: 1.8rem;
-    }
-    
     #closeBtn.show{
         display: block;
     }
@@ -308,12 +519,6 @@ footer::before {
 
 @media (max-width: 30rem) {
     html { font-size: 55%; }
-    .brand a {
-        font-size: 1.8rem;
-    }
-    .brand img {
-        height: 3.5rem;
-    }
     .links, .contact, .socialMedia {
         flex: 1 1 100%;
         text-align: center;

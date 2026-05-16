@@ -3,260 +3,391 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PREMIUM ACADEMY | Primary & JHS - Excellence in Education</title>
+    <title>PREMIUM ACADEMY | Primary & JHS - Building Strong Foundations</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/primary.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
+
     <nav>
         <div class="navItems">
             <div class="brand">
-                <a href="index.html"><img src="img/logo.png" alt="">PREMIUM <span>ACADEMY</span> </a>
+                <a href="index.html"><img src="img/logo.png" alt="Premium Academy Logo">PREMIUM <span>ACADEMY</span></a>
             </div>
-
             <ul id="navlinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="creche.html">Creche</a></li>
                 <li><a href="nursery.html">Nursery</a></li>
                 <li><a href="primary.html">Primary & JHS</a></li>
-                <li><a href="#">SHS</a></li>
-                <li><a href="#">University</a></li>
+                <li><a href="shs.html">SHS</a></li>
+                <li><a href="university.html">University</a></li>
             </ul>
-            <div id="openBtn"><img src="img/menu.png" alt=""></div>
+            <div id="openBtn"><img src="img/menu.png" alt="Menu"></div>
         </div>
     </nav>
 
-    <header>
-        <div class="heroSection">
-            <h1>PRIMARY & JHS</h1>
-            <p>Empowering Students with Knowledge and Character</p>
+    <header class="primaryHero">
+        <div class="heroContent">
+            <span class="heroBadge">Ages 6 - 14 Years</span>
+            <h1>Primary & <span class="goldText">JHS</span></h1>
+            <p>Building Strong Foundations for Lifelong Success</p>
+            <div class="heroBtns">
+                <a href="#overview" class="mainBtn">Explore Programs</a>
+                <a href="#" class="secBtn modalTrigger">Apply Now</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="overview">
+        <section class="overview" id="overview">
             <div class="container">
                 <div class="overviewGrid">
                     <div class="overviewText">
-                        <span class="section-label">Our Philosophy</span>
-                        <h2>A Foundation for Excellence</h2>
-                        <p>We nurture young minds through a balanced curriculum that combines rigorous academics with character-building, creativity, and physical well-being. Our student-centered approach ensures every child reaches their full potential.</p>
-                        <div class="statGrid">
-                            <div class="statItem">
-                                <h3>1:12</h3>
-                                <p>Teacher-Student Ratio</p>
-                            </div>
-                            <div class="statItem">
-                                <h3>100%</h3>
-                                <p>Placement Rate</p>
-                            </div>
-                            <div class="statItem">
-                                <h3>20+</h3>
-                                <p>Extracurricular Clubs</p>
-                            </div>
+                        <span class="sectionLabel">Academic Excellence</span>
+                        <h2>Where Potential <span class="goldText">Becomes Achievement</span></h2>
+                        <p>Our Primary and Junior High School program delivers a rigorous, well-rounded education that prepares students for academic success and personal growth. We combine the Cambridge International Curriculum with our own enriched Premium curriculum.</p>
+                        <p>From Grade 1 through JHS 3, our students develop critical thinking, leadership skills, and a passion for learning that stays with them throughout their academic journey.</p>
+                        <div class="overviewBtns">
+                            <a href="#" class="mainBtn modalTrigger">Download Prospectus</a>
+                            <a href="#" class="secBtn modalTrigger">Book a Tour</a>
                         </div>
                     </div>
-                    <div class="overviewImage">
-                        <img src="img/primarysch.jpg" alt="Primary School Students">
+                    <div class="overviewStats">
+                        <div class="statCard">
+                            <span class="statNumber">1:12</span>
+                            <p class="statDesc">Teacher-Student Ratio</p>
+                            <span class="statDetail">Personalized attention</span>
+                        </div>
+                        <div class="statCard">
+                            <span class="statNumber">100%</span>
+                            <p class="statDesc">Placement Rate</p>
+                            <span class="statDetail">To top senior high schools</span>
+                        </div>
+                        <div class="statCard">
+                            <span class="statNumber">20+</span>
+                            <p class="statDesc">Clubs & Societies</p>
+                            <span class="statDetail">Holistic development</span>
+                        </div>
+                        <div class="statCard">
+                            <span class="statNumber">15+</span>
+                            <p class="statDesc">Years of Excellence</p>
+                            <span class="statDetail">Proven track record</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="curriculum" class="curriculum">
+        <section class="welcomeSection">
+            <div class="container">
+                <div class="welcomeGrid">
+                    <div class="welcomeImage">
+                        <img src="img/primarysch.jpg" alt="Principal Welcome">
+                    </div>
+                    <div class="welcomeText">
+                        <span class="sectionLabel">From Our Principal</span>
+                        <h2>A Message from <span class="goldText">Our Principal</span></h2>
+                        <p>Welcome to Premium Academy's Primary and Junior High School division. Here, we believe that every child possesses unique talents waiting to be discovered and nurtured. Our dedicated faculty works tirelessly to create an environment where academic rigor meets creative exploration.</p>
+                        <p>We take pride in our holistic approach to education, where character development is as important as academic achievement. Our students graduate not just with excellent grades, but with the confidence, integrity, and leadership skills needed to excel in senior high school and beyond.</p>
+                        <div class="principalInfo">
+                            <span class="principalName">Dr. Margaret Owusu</span>
+                            <span class="principalTitle">Principal, Primary & JHS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="curriculum">
             <div class="container">
                 <div class="sectionHeader">
-                    <span class="section-label">Academic Tracks</span>
-                    <h2>Holistic Curriculum</h2>
+                    <span class="sectionLabel">Curriculum</span>
+                    <h2>World-Class <span class="goldText">Academic Program</span></h2>
+                    <p>Our curriculum blends international standards with local relevance, ensuring our students are prepared for global opportunities.</p>
                 </div>
                 <div class="curriculumGrid">
                     <div class="currCard">
-                        <div class="currIcon">📚</div>
-                        <h3>Core Literacy</h3>
-                        <p>Comprehensive reading, writing, and language development programs.</p>
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-scroll"></i></span>
+                        </div>
+                        <h3>English Language & Literacy</h3>
+                        <p>Comprehensive language arts program covering reading comprehension, creative writing, grammar, and public speaking skills.</p>
                     </div>
                     <div class="currCard">
-                        <div class="currIcon">🧮</div>
-                        <h3>STEM Discovery</h3>
-                        <div class="cardContent">
-                            <h2>Academic Excellence</h2>
-                            <p>Our primary curriculum is designed to foster critical thinking and a love for learning in every student.</p>
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-chart-simple"></i></span>
                         </div>
+                        <h3>Mathematics & Logic</h3>
+                        <p>Singapore Math methodology combined with problem-solving strategies, critical thinking, and real-world application.</p>
                     </div>
-                    <div class="card">
-                        <div class="cardImage">
-                            <img src="img/classroom2.jpg" alt="Classroom">
+                    <div class="currCard">
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-microscope"></i></span>
                         </div>
-                        <div class="cardContent">
-                            <h2>Holistic Development</h2>
-                            <p>Beyond academics, we focus on character building, sports, and creative arts to develop well-rounded individuals.</p>
+                        <h3>Science & Technology</h3>
+                        <p>Hand-on laboratory experiments, STEM projects, coding fundamentals, and environmental studies.</p>
+                    </div>
+                    <div class="currCard">
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-globe"></i></span>
                         </div>
+                        <h3>Social Studies & Citizenship</h3>
+                        <p>History, geography, civic education, and cultural studies that develop global awareness and responsible citizenship.</p>
                     </div>
-                </div>
-
-        <section id="welcome" class="welcomeSection">
-            <div class="container">
-                <div class="overviewGrid">
-                    <div class="overviewImage">
-                        <img src="img/classroom.jpg" alt="Principal Welcome">
+                    <div class="currCard">
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-palette"></i></span>
+                        </div>
+                        <h3>Creative & Performing Arts</h3>
+                        <p>Visual arts, music, drama, and dance programs that foster creativity, confidence, and self-expression.</p>
                     </div>
-                    <div class="overviewText">
-                        <span class="section-label">Principal's Welcome</span>
-                        <h2>Cultivating Brilliance</h2>
-                        <p>Welcome to our vibrant learning community. At Premium Academy, we believe that education is more than just textbooks; it is about kindling curiosity and fostering the courage to innovate. Our Primary and JHS programs are designed to inspire every child to dream big and work hard.</p>
-                        <p>We are dedicated to providing a safe, supportive, and intellectually stimulating environment where students feel valued and empowered to explore their interests.</p>
+                    <div class="currCard">
+                        <div class="currIconWrap">
+                            <span class="currIcon"><i class="fa-solid fa-person-running"></i></span>
+                        </div>
+                        <h3>Physical & Health Education</h3>
+                        <p>Comprehensive PE program including sports, swimming, athletics, and health education for physical well-being.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="support" class="curriculum">
+        <section class="jhsSection">
             <div class="container">
-                <div class="sectionHeader">
-                    <span class="section-label">Student Success</span>
-                    <h2>Comprehensive Support</h2>
-                </div>
-                <div class="curriculumGrid">
-                    <div class="currCard">
-                        <div class="currIcon">🧠</div>
-                        <h3>Mentorship</h3>
-                        <p>One-on-one guidance to help students navigate challenges and set personal goals.</p>
-                    </div>
-                    <div class="currCard">
-                        <div class="currIcon">🛡️</div>
-                        <h3>Well-being</h3>
-                        <p>Dedicated counselors available to support the emotional and social growth of every child.</p>
-                    </div>
-                    <div class="currCard">
-                        <div class="currIcon">🌟</div>
-                        <h3>Specialized Needs</h3>
-                        <p>Inclusive learning programs designed to accommodate diverse learning styles and abilities.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="playground" class="playground-showcase">
-            <div class="container">
-                <div class="playground-flex">
-                    <div class="playground-content">
-                        <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">World-Class Playground</h2>
-                        <p>Our expansive outdoor play area is designed to inspire movement and adventure. From custom climbing structures to sensory gardens, every corner is a new discovery.</p>
-                        <ul class="playground-features">
-                            <li><img src="img/check-box-svgrepo-com.svg" alt=""> Eco-friendly soft-fall flooring</li>
-                            <li><img src="img/check-box-svgrepo-com.svg" alt=""> Age-appropriate sensory zones</li>
-                            <li><img src="img/check-box-svgrepo-com.svg" alt=""> Modern climbing & balance structures</li>
-                            <li><img src="img/check-box-svgrepo-com.svg" alt=""> 24/7 Security & Active Supervision</li>
+                <div class="jhsGrid">
+                    <div class="jhsText">
+                        <span class="sectionLabel light">Junior High School</span>
+                        <h2>Preparing Leaders for <span class="goldText">Tomorrow</span></h2>
+                        <p>Our JHS program is specifically designed to bridge the gap between primary education and senior high school. Students develop advanced critical thinking skills, deeper subject knowledge, and the academic discipline needed for success.</p>
+                        <ul class="jhsFeatures">
+                            <li>Specialized subject teachers for Mathematics, Science, English, and French</li>
+                            <li>Career guidance and counseling program starting from JHS 1</li>
+                            <li>Leadership training through prefectship and student council</li>
+                            <li>Annual academic trips and exchange programs</li>
+                            <li>BECE preparation with mock examinations and personalized coaching</li>
+                            <li>Digital literacy program with one-device-per-student policy</li>
                         </ul>
+                        <a href="#" class="mainBtn modalTrigger">Learn About JHS</a>
                     </div>
-                    <div class="playground-image">
-                        <img src="img/stadium.jpg" alt="Playground">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="routine" class="daily-routine">
-            <div class="container">
-                <h2 class="section-title">A Day at Our Academy</h2>
-                <div class="routine-timeline">
-                    <div class="routine-item">
-                        <div class="time"><span>08:00 AM</span></div>
-                        <div class="activity">
-                            <h3>Assembly & Morning Prep</h3>
-                            <p>A structured start to the day focused on goal-setting and reflection.</p>
-                        </div>
-                    </div>
-                    <div class="routine-item">
-                        <div class="time"><span>09:30 AM</span></div>
-                        <div class="activity">
-                            <h3>Academic Core</h3>
-                            <p>Focused learning sessions on literacy, math, and core curriculum subjects.</p>
-                        </div>
-                    </div>
-                    <div class="routine-item">
-                        <div class="time"><span>11:00 AM</span></div>
-                        <div class="activity">
-                            <h3>Physical Development</h3>
-                            <p>Active play and sports sessions in our state-of-the-art facilities.</p>
-                        </div>
+                    <div class="jhsImage">
+                        <img src="img/jhs.jpg" alt="JHS Students">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="news" class="news-achievements">
-            <div class="container">
-                <h2 class="section-title">Latest News & Achievements</h2>
-                <div class="news-grid">
-                    <div class="news-card">
-                        <div class="news-tag">Achievement</div>
-                        <img src="img/primarysch.jpg" alt="News">
-                        <div class="news-body">
-                            <h3>National Academic Excellence</h3>
-                            <p>Our primary students have once again secured the top national honors in STEM.</p>
-                            <a href="#" class="read-more">Read Full Story →</a>
-                        </div>
-                    </div>
-                    <div class="news-card">
-                        <div class="news-tag">Innovation</div>
-                        <img src="img/classroom2.jpg" alt="News">
-                        <div class="news-body">
-                            <h3>New Digital Literacy Suite</h3>
-                            <p>We have integrated AI-assisted learning tools to personalize student success.</p>
-                            <a href="#" class="read-more">Read Full Story →</a>
-                        </div>
-                    </div>
-                    <div class="news-card">
-                        <div class="news-tag">Event</div>
-                        <img src="img/jhs.jpg" alt="News">
-                        <div class="news-body">
-                            <h3>Junior Leaders Gala</h3>
-                            <p>Join us as we celebrate the leadership milestones achieved by our JHS cohort.</p>
-                            <a href="#" class="read-more">Read Full Story →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="testimonials" class="testimonials">
+        <section class="activities">
             <div class="container">
                 <div class="sectionHeader">
-                    <span class="section-label">Voices of Excellence</span>
-                    <h2>Student & Parent Testimonials</h2>
+                    <span class="sectionLabel">Beyond the Classroom</span>
+                    <h2>Co-Curricular <span class="goldText">Excellence</span></h2>
+                    <p>Learning extends beyond textbooks. Our vibrant co-curricular program helps students discover passions and develop character.</p>
+                </div>
+                <div class="activitiesGrid">
+                    <div class="activityCard">
+                        <div class="activityIconWrap">
+                            <span class="activityIcon"><i class="fa-solid fa-futbol"></i></span>
+                        </div>
+                        <h3>Sports Academy</h3>
+                        <p>Football, basketball, volleyball, track and field, swimming, and table tennis with professional coaching.</p>
+                    </div>
+                    <div class="activityCard">
+                        <div class="activityIconWrap">
+                            <span class="activityIcon"><i class="fa-solid fa-music"></i></span>
+                        </div>
+                        <h3>Music & Band</h3>
+                        <p>School choir, brass band, string ensemble, and individual instrument lessons with certified instructors.</p>
+                    </div>
+                    <div class="activityCard">
+                        <div class="activityIconWrap">
+                            <span class="activityIcon"><i class="fa-solid fa-laptop"></i></span>
+                        </div>
+                        <h3>Robotics Club</h3>
+                        <p>Hands-on robotics, coding, and engineering challenges that prepare students for the digital age.</p>
+                    </div>
+                    <div class="activityCard">
+                        <div class="activityIconWrap">
+                            <span class="activityIcon"><i class="fa-solid fa-globe"></i></span>
+                        </div>
+                        <h3>Debate & Public Speaking</h3>
+                        <p>Competitive debating, Model UN, and public speaking workshops that build confidence and articulation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="campusGallery">
+            <div class="container">
+                <div class="sectionHeader">
+                    <span class="sectionLabel">Campus Life</span>
+                    <h2>Our Vibrant <span class="goldText">Campus</span></h2>
+                    <p>From classrooms to playgrounds, every corner of our campus is designed to inspire learning and growth.</p>
+                </div>
+                <div class="galleryGrid">
+                    <div class="galleryItem wide">
+                        <img src="img/primarysch.jpg" alt="School Building">
+                        <div class="galleryOverlay">
+                            <h3>Main Academic Block</h3>
+                            <p>Modern classrooms with smart boards and digital learning tools</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/classroom.jpg" alt="Science Lab">
+                        <div class="galleryOverlay">
+                            <h3>Science Laboratory</h3>
+                            <p>Fully equipped lab for hands-on experiments and discovery</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/classroom2.jpg" alt="STEM Workshop">
+                        <div class="galleryOverlay">
+                            <h3>STEM Innovation Hub</h3>
+                            <p>Robotics, coding and engineering design studio</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/homehero2.jpg" alt="Reading Garden">
+                        <div class="galleryOverlay">
+                            <h3>Reading Garden</h3>
+                            <p>Outdoor reading space surrounded by nature</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/nursery.jpg" alt="Computer Lab">
+                        <div class="galleryOverlay">
+                            <h3>Computer Lab</h3>
+                            <p>50 workstations with latest educational software</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem wide">
+                        <img src="img/stadium.jpg" alt="Sports Field">
+                        <div class="galleryOverlay">
+                            <h3>Sports Pavilion</h3>
+                            <p>Multi-purpose sports field with seating for 500 spectators</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/creceh.jpg" alt="Art Studio">
+                        <div class="galleryOverlay">
+                            <h3>Creative Arts Center</h3>
+                            <p>Art, music and drama studios for creative expression</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/jhs.jpg" alt="JHS Students">
+                        <div class="galleryOverlay">
+                            <h3>JHS Wing</h3>
+                            <p>Dedicated upper school facility with specialized subject labs</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/homehero.jpg" alt="Entrance Hall">
+                        <div class="galleryOverlay">
+                            <h3>Main Entrance</h3>
+                            <p>Welcoming entrance with secure access and reception</p>
+                        </div>
+                    </div>
+                    <div class="galleryItem">
+                        <img src="img/nurseryhero.jpg" alt="Early Childhood Center">
+                        <div class="galleryOverlay">
+                            <h3>Early Childhood Center</h3>
+                            <p>Nurturing environment designed for our youngest learners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="facilities">
+            <div class="container">
+                <div class="sectionHeader">
+                    <span class="sectionLabel">Facilities</span>
+                    <h2>Purpose-Built <span class="goldText">Learning Spaces</span></h2>
+                    <p>Our campus is equipped with modern facilities designed to support academic excellence and holistic development.</p>
+                </div>
+                <div class="facilityGrid">
+                    <div class="facilityCard">
+                        <img src="img/classroom.jpg" alt="Science Laboratory">
+                        <div class="facilityOverlay">
+                            <h3>Modern Science Labs</h3>
+                            <p>Fully equipped physics, chemistry, and biology laboratories for hands-on experimentation.</p>
+                        </div>
+                    </div>
+                    <div class="facilityCard">
+                        <img src="img/classroom2.jpg" alt="Library">
+                        <div class="facilityOverlay">
+                            <h3>Digital Library</h3>
+                            <p>Extensive collection of books, e-resources, and quiet study spaces for research and reading.</p>
+                        </div>
+                    </div>
+                    <div class="facilityCard">
+                        <img src="img/stadium.jpg" alt="Sports Complex">
+                        <div class="facilityOverlay">
+                            <h3>Sports Complex</h3>
+                            <p>Multi-purpose sports hall, football pitch, basketball court, and Olympic-size swimming pool.</p>
+                        </div>
+                    </div>
+                    <div class="facilityCard">
+                        <img src="img/shs.jpg" alt="Music Room">
+                        <div class="facilityOverlay">
+                            <h3>Music & Band Room</h3>
+                            <p>Soundproofed music rooms with a wide range of instruments for rehearsals and lessons.</p>
+                        </div>
+                    </div>
+                    <div class="facilityCard">
+                        <img src="img/homehero2.jpg" alt="Auditorium">
+                        <div class="facilityOverlay">
+                            <h3>500-Seat Auditorium</h3>
+                            <p>Professional-grade auditorium for assemblies, performances, and special events.</p>
+                        </div>
+                    </div>
+                    <div class="facilityCard">
+                        <img src="img/nurseryhero.jpg" alt="Swimming Pool">
+                        <div class="facilityOverlay">
+                            <h3>Olympic Pool</h3>
+                            <p>Regulation-size swimming pool with professional coaching and life guard supervision.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="sectionHeader">
+                    <span class="sectionLabel">Testimonials</span>
+                    <h2>What Our <span class="goldText">Community Says</span></h2>
                 </div>
                 <div class="testimonialsGrid">
                     <div class="testimonialCard">
-                        <div class="quote-icon">"</div>
-                        <p class="testimonial-text">"Premium Academy has completely changed how my daughter approaches learning. She is now confident, curious, and excited about school every single day."</p>
-                        <div class="testimonial-author">
-                            <div class="author-info">
-                                <h4>Sarah Johnson</h4>
-                                <span>Primary Parent</span>
+                        <p class="testimonialText">Premium Academy has shaped our daughter into a confident, articulate young leader. The academic rigor combined with character development is exactly what we wanted.</p>
+                        <div class="testimonialAuthor">
+                            <div class="authorAvatar">SM</div>
+                            <div class="authorInfo">
+                                <h4>Mr. & Mrs. Sarfo-Mensah</h4>
+                                <span>Parents of JHS 2 Student</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonialCard">
-                        <div class="quote-icon">"</div>
-                        <p class="testimonial-text">"The mentorship provided in the JHS program is unmatched. My son has developed not just academically, but as a young leader."</p>
-                        <div class="testimonial-author">
-                            <div class="author-info">
-                                <h4>David Mensah</h4>
-                                <span>JHS Parent</span>
+                        <p class="testimonialText">The teachers at Premium Academy go above and beyond. My son's improvement in Mathematics and Science has been remarkable since joining the school.</p>
+                        <div class="testimonialAuthor">
+                            <div class="authorAvatar">EA</div>
+                            <div class="authorInfo">
+                                <h4>Mrs. Efua Asante</h4>
+                                <span>Parent of Primary 4 Student</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonialCard">
-                        <div class="quote-icon">"</div>
-                        <p class="testimonial-text">"I love the hands-on science experiments and the coding club! School feels like a place where my ideas really matter."</p>
-                        <div class="testimonial-author">
-                            <div class="author-info">
-                                <h4>Kofi A.</h4>
-                                <span>JHS Student</span>
+                        <p class="testimonialText">I am grateful for the holistic education my child receives. The robotics club and debate team have given skills that go far beyond the classroom.</p>
+                        <div class="testimonialAuthor">
+                            <div class="authorAvatar">KO</div>
+                            <div class="authorInfo">
+                                <h4>Mr. Kwame Ofori</h4>
+                                <span>Parent of JHS 1 Student</span>
                             </div>
                         </div>
                     </div>
@@ -267,12 +398,110 @@
         <section class="ctaSection">
             <div class="container">
                 <div class="ctaBox">
-                    <h2>Ready to Begin Your Journey?</h2>
-                    <p>Join Premium Academy today and set the foundation for a lifetime of success.</p>
+                    <h2>Enroll Your Child at <span class="goldText">Premium Academy</span></h2>
+                    <p>Join a community where academic excellence meets character development. Admissions are open for the upcoming academic year.</p>
                     <div class="ctaBtns">
-                        <a href="#" class="mainBtn">Apply Now</a>
-                        <a href="#" class="secBtn">Visit Us</a>
+                        <a href="#" class="mainBtn modalTrigger">Apply for Admission</a>
+                        <a href="#" class="secBtn modalTrigger">Schedule Campus Tour</a>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
+
+    <div class="modalOverlay" id="modalOverlay">
+        <div class="modalBox">
+            <button class="modalClose" id="modalClose">&times;</button>
+            <div class="modalHeader">
+                <h2>Apply to <span class="goldText">Primary & JHS</span></h2>
+                <p>Fill in your details and our admissions team will contact you within 24 hours to discuss your child's enrollment.</p>
+            </div>
+            <form class="modalForm" id="modalForm">
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="formName">Full Name *</label>
+                        <input type="text" id="formName" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="formEmail">Email Address *</label>
+                        <input type="email" id="formEmail" name="email" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="formPhone">Phone Number *</label>
+                        <input type="tel" id="formPhone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="formChild">Student's Name</label>
+                        <input type="text" id="formChild" name="child" placeholder="Enter the student's full name">
+                    </div>
+                </div>
+                <div class="formGroup">
+                    <label for="formProgram">Grade / Program of Interest *</label>
+                    <select id="formProgram" name="program" required>
+                        <option value="">Select a grade</option>
+                        <option value="Primary 1">Primary 1 (Age 6-7)</option>
+                        <option value="Primary 2">Primary 2 (Age 7-8)</option>
+                        <option value="Primary 3">Primary 3 (Age 8-9)</option>
+                        <option value="Primary 4">Primary 4 (Age 9-10)</option>
+                        <option value="Primary 5">Primary 5 (Age 10-11)</option>
+                        <option value="Primary 6">Primary 6 (Age 11-12)</option>
+                        <option value="JHS 1">JHS 1 (Age 12-13)</option>
+                        <option value="JHS 2">JHS 2 (Age 13-14)</option>
+                        <option value="JHS 3">JHS 3 (Age 14-15)</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label for="formMessage">Message</label>
+                    <textarea id="formMessage" name="message" placeholder="Tell us about the student, any special requirements, or questions you may have..." rows="4"></textarea>
+                </div>
+                <div class="formGroup checkboxGroup">
+                    <input type="checkbox" id="formConsent" name="consent" required>
+                    <label for="formConsent">I consent to Premium Academy processing my data for admissions purposes. *</label>
+                </div>
+                <button type="submit" class="formSubmit">Submit Enquiry</button>
+            </form>
+            <div class="modalFooter">
+                <p>Alternatively, call us on <strong><i class="fa-solid fa-phone"></i> +1 234 567 890</strong> or visit our campus</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerInfo">
+            <div class="brandName">
+                <h1>PREMIUM <span>ACADEMY</span></h1>
+                <p>Empowering the next generation of leaders through excellence in education and character building.</p>
+            </div>
+            <div class="links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="creche.html">Creche</a></li>
+                    <li><a href="nursery.html">Nursery</a></li>
+                    <li><a href="primary.html">Primary & JHS</a></li>
+                    <li><a href="shs.html">SHS</a></li>
+                    <li><a href="university.html">University</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Location</h3>
+                <p class="location"><i class="fa-solid fa-location-dot"></i> 123 Education Lane, Elite City</p>
+                <p class="call"><i class="fa-solid fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fa-solid fa-envelope"></i> info@premiumacademy.com</p>
+            </div>
+            <div class="socialMedia">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <p>Made with <i class="fa-solid fa-heart"></i> by Famous Graphics &copy; <span id="footerDate"></span></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
