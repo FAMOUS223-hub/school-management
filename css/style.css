@@ -13,7 +13,6 @@ header {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: overlay;
-    background-attachment: fixed;
     position: relative;
     overflow: hidden;
 }
@@ -431,6 +430,5 @@ main {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: overlay;
-    background-attachment: fixed;
 }
 

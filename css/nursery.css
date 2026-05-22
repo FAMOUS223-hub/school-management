@@ -6,7 +6,6 @@
     background: linear-gradient(135deg, rgba(0, 44, 83, 0.7), rgba(201, 169, 75, 0.25)), url(../img/nurseryhero.jpg);
     background-size: cover;
     background-position: center 30%;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
