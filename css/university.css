@@ -971,6 +971,14 @@
     }
 }
 
+@media (max-width: 48rem) {
+    .campusLife,
+    .research,
+    .testimonials {
+        display: none;
+    }
+}
+
 @media (max-width: 480px) {
     .uniHero .heroContent h1 {
         font-size: 3rem;

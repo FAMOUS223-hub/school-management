@@ -910,6 +910,15 @@
     }
 }
 
+@media (max-width: 48rem) {
+    .timetable,
+    .facilities,
+    .whyLove,
+    .testimonials {
+        display: none;
+    }
+}
+
 @media (max-width: 480px) {
     .crecheHero .heroContent h1 {
         font-size: 3.2rem;

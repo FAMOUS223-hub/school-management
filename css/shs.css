@@ -840,6 +840,14 @@
     }
 }
 
+@media (max-width: 48rem) {
+    .collegePrep,
+    .eliteFacilities,
+    .testimonials {
+        display: none;
+    }
+}
+
 @media (max-width: 480px) {
     .shsHero {
         height: 50vh;

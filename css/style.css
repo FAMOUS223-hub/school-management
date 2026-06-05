@@ -15,9 +15,7 @@ header {
     background-blend-mode: overlay;
     position: relative;
     overflow: hidden;
-<<<<<<< HEAD
     background-attachment: fixed;
-=======
 }
 
 header::after {
@@ -32,22 +30,9 @@ header::after {
     background-repeat: no-repeat;
     pointer-events: none;
     z-index: 2;
->>>>>>> 3fa30c570ddfdb1d8d6d1b55b0a035c9061152f4
 }
 
-/* header::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,24 C160,4 320,4 480,24 C640,44 800,44 960,24 C1120,4 1280,4 1440,24 L1440,120 L0,120 Z'/%3E%3C/svg%3E");
-    background-size: cover;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    z-index: 2;
-} */
+
 
 .intro {
     font-size: 1.2rem;
@@ -451,6 +436,13 @@ main {
 }
 @media(max-width: 64rem){
     .newsEvents{
+        display: none;
+    }
+}
+
+@media(max-width: 48rem){
+    .second,
+    .parents{
         display: none;
     }
 }
