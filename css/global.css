@@ -29,6 +29,7 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     list-style: none;
     color: var(--text-dark);
+    padding-top: 9rem;
 }
 
 html{
@@ -46,8 +47,9 @@ nav{
     gap: 3rem;
     align-items: center;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 100;
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
 }
@@ -486,7 +488,7 @@ footer::before {
     #openBtn{
         display: block;
     }
-    nav{
+    .navItems{
         position: relative;
     }
     nav ul{
